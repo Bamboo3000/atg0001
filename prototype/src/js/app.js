@@ -35,7 +35,7 @@ function siemaAutoplay($time, $siema, $carousel)
 	});
 }
 
-function loadCarousel() 
+function loadCommentsCarousel() 
 {
 	var siema = document.getElementById('comments-carousel');
 	if(siema) {
@@ -59,4 +59,29 @@ function loadCarousel()
 	}
 }
 
-loadCarousel();
+function loadProductCarousel() 
+{
+	var siema = document.getElementById('product-carousel');
+	if(siema) {
+		const myProductSiema = new Siema({
+			selector: '#product-carousel',
+			duration: 500,
+			easing: 'ease',
+			perPage: 1,
+			startIndex: 0,
+			draggable: true,
+			threshold: 20,
+			loop: true
+		});
+		document.getElementById('siema-prev').addEventListener('click', function() {
+			myProductSiema.prev()
+		});
+		document.getElementById('siema-next').addEventListener('click', function() {
+			myProductSiema.next()
+		});
+		siemaAutoplay(5000, myProductSiema, siema);
+	}
+}
+
+loadCommentsCarousel();
+loadProductCarousel();
