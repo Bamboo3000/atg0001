@@ -33,13 +33,13 @@
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="/my-account">
 						<span>account</span>
 						<i class="material-icons">person</i>
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="/cart">
 						<span>basket</span>
 						<i class="material-icons">shopping_basket</i>
 					</a>
@@ -50,28 +50,16 @@
 	<div class="bottom">
 		<div class="container">
 			<div class="left">
-				<a href="landing.html" class="logo">
-					<object data="assets/img/logo.svg" type="image/svg+xml"></object>
+				<a href="/" class="logo">
+					<object data="<?= get_template_directory_uri(); ?>/assets/img/logo.svg" type="image/svg+xml"></object>
 				</a>
 			</div>
 			<div class="right">
-				<ul class="menu">
-					<li>
-						<a href="landing.html">Home</a>
-					</li>
-					<li>
-						<a href="product-listing.html">Shop</a>
-					</li>
-					<li>
-						<a href="lookbook.html">Lookbook</a>
-					</li>
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-				</ul>
+				<?php if ( has_nav_menu( 'menu' ) ) :
+				wp_nav_menu( array(
+					'theme_location' => 'menu',
+				) );
+				endif; ?>
 			</div>
 		</div>
 	</div>

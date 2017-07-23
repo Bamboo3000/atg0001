@@ -48,8 +48,9 @@ function atg_setup() {
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
-		'top'    => __( 'Top Menu', 'atg' ),
+		'shop'    => __( 'Shop Menu', 'atg' ),
 		'social' => __( 'Social Links Menu', 'atg' ),
+		'menu'    => __( 'Main Menu', 'atg' ),
 	) );
 
 	/*
@@ -571,3 +572,8 @@ function jk_dequeue_styles( $enqueue_styles ) {
 
 // Or just remove them all in one line
 add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+
+// function wc_format_sale_price( $regular_price, $sale_price ) {
+// 	$price = ( is_numeric( $sale_price ) ? wc_price( $sale_price ) : $sale_price );
+// 	return apply_filters( 'woocommerce_format_sale_price', $price, $regular_price, $sale_price );
+// }
