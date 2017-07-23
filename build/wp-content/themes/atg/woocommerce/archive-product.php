@@ -55,15 +55,6 @@ get_header(); ?>
 
 			<?php woocommerce_product_loop_end(); ?>
 
-			<?php
-				/**
-				 * woocommerce_after_shop_loop hook.
-				 *
-				 * @hooked woocommerce_pagination - 10
-				 */
-				do_action( 'woocommerce_after_shop_loop' );
-			?>
-
 		<?php elseif ( ! woocommerce_product_subcategories( array( 'before' => woocommerce_product_loop_start( false ), 'after' => woocommerce_product_loop_end( false ) ) ) ) : ?>
 
 			<?php
@@ -78,42 +69,16 @@ get_header(); ?>
 		<?php endif; ?>
 
 	</section>
-	<div class="product-listing__pagination">
-        <a href="" class="prev">
-            <i class="material-icons">chevron_left</i>
-            <span>Previous</span>
-        </a>
-        <ul>
-            <li>
-                <a href="">1</a>
-            </li>
-            <li>
-                ...
-            </li>
-            <li>
-                <a href="">4</a>
-            </li>
-            <li>
-                <a href="">5</a>
-            </li>
-            <li class="active">
-                <a href="">6</a>
-            </li>
-            <li>
-                <a href="">7</a>
-            </li>
-            <li>
-                <a href="">8</a>
-            </li>
-            <li>
-                ...
-            </li>
-        </ul>
-        <a href="" class="next">
-            <span>Next</span>
-            <i class="material-icons">chevron_right</i>
-        </a>
-    </div>
+
+	<?php
+		/**
+		 * woocommerce_after_shop_loop hook.
+		 *
+		 * @hooked woocommerce_pagination - 10
+		 */
+		do_action( 'woocommerce_after_shop_loop' );
+	?>
+
 </div>
 
 <?php get_footer(); ?>
