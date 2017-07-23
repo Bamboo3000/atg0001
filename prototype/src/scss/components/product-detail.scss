@@ -154,6 +154,47 @@
             font-family: $font-primary;
         }
 
+        .btns {
+            display: inline-block;
+            height: 46px;
+            vertical-align: middle;
+            margin-left: -4px;
+        }
+
+        .quantity {
+            display: inline-block;
+            border: 2px solid rgba($color-tertiary, 1);
+            width: 50px;
+            position: relative;
+            overflow: hidden;
+
+            input {
+                appearance: none;
+                border: none;
+                text-align: center;
+                line-height: 38px;
+                font-size: 12px;
+                text-decoration: none;
+                text-transform: uppercase;
+                width: 60px;
+                position: relative;
+                padding: 0 18px 0 0;
+                color: $color-tertiary;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+                background: transparent;
+                display: block;
+
+
+                &:active,
+                &:focus {
+                    outline: none;
+                }
+
+            }
+
+        }
+
     }
 
 }

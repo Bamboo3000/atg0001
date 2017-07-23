@@ -34,8 +34,8 @@ var src = {
     buildCss: './build/assets/css',
     buildImg: './build/assets/img',
     buildFonts: './build/assets/fonts',
-    portJs: '../build/upload/catalog/view/javascript',
-    portCss: '../build/upload/catalog/view/theme/atg/stylesheet'
+    portJs: '../build/wp-content/themes/atg/assets/js',
+    portCss: '../build/wp-content/themes/atg/assets/css'
 };
 
 var production = false;

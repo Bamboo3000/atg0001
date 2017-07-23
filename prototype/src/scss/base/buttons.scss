@@ -1,5 +1,9 @@
 .btn {
-	// transition: all 250ms ease-in-out;
+	-webkit-appearance: none!important;
+	-moz-appearance: none!important;
+	-ms-progress-appearance: none!important; 
+	appearance: none!important;
+	cursor: pointer;
 
 	span {
 		text-align: center;
@@ -8,10 +12,35 @@
 		transition: all 250ms ease-in;
 	}
 
+	&-qty {
+		border: none;
+		text-align: center;
+		line-height: 23px;
+		height: 23px;
+		width: 23px;
+		font-size: 20px;
+		text-decoration: none;
+		text-transform: uppercase;
+		display: block;
+		position: relative;
+		padding: 0;
+		margin: 0;
+		background-color: $color-tertiary;
+		color: white;
+		font-weight: 400;
+		letter-spacing: 0;
+		transition: all 200ms ease;
+
+		&:hover {
+			background-color: rgba($color-tertiary, 0.5);
+			color: $color-dark;
+		}
+
+	}
+
 	&-default {
 		border: 2px solid rgba($color-tertiary, 1);
 		text-align: center;
-		height: 42px;
 		line-height: 42px;
 		font-size: 12px;
 		text-decoration: none;
