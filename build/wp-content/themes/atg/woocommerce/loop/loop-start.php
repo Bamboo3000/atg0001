@@ -34,6 +34,12 @@
                 <i class="material-icons">expand_more</i>
             </div>
         </form>
+        <?php
+            // /**
+            //  * Sorting and breadcrumbs
+            //  */
+            do_action( 'woocommerce_before_shop_loop' );
+        ?>
     </aside>
     <div class="product-listing__product-number">
         <span>284,038</span>

@@ -28,8 +28,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 }
 ?>
 <div <?php post_class('product-listing__products__item'); ?>>
+	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
 	<div class="content">
-		<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
 		<div class="img">
 			<?php do_action( 'woocommerce_before_shop_loop_item_title' ); ?>
 		</div>
@@ -39,4 +39,5 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 		<hr>
 		<?php do_action( 'woocommerce_after_shop_loop_item_title' ); ?>
 	</div>
+	<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
 </div>

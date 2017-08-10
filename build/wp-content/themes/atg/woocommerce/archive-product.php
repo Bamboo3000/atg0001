@@ -27,13 +27,6 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<?php
-				// /**
-				//  * Sorting and breadcrumbs
-				//  */
-				// do_action( 'woocommerce_before_shop_loop' );
-			?>
-
 			<?php woocommerce_product_loop_start(); ?>
 
 				<?php woocommerce_product_subcategories(); ?>
