@@ -83,5 +83,21 @@ function loadProductCarousel()
 	}
 }
 
+function increaseValue(el)
+{
+	var value = parseInt(document.getElementById(el).value, 10);
+	value++;
+	document.getElementById(el).value = value;
+}
+
+function decreaseValue(el)
+{
+	var value = parseInt(document.getElementById(el).value, 10);
+	if(value !== 1) {
+		value--;
+	}
+	document.getElementById(el).value = value;
+}
+
 loadCommentsCarousel();
 loadProductCarousel();
