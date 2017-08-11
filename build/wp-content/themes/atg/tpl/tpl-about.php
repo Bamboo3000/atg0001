@@ -1,4 +1,15 @@
 <?php /* Template Name: About */ ?>
 <?php get_header(); ?>
 
+<section class="about">
+    <div class="container">
+        <?php while ( have_posts() ) : the_post(); ?>
+
+            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            <?php the_content(); ?>
+
+        <?php endwhile; // end of the loop. ?>
+    </div>
+</section>
+
 <?php get_footer(); ?>
