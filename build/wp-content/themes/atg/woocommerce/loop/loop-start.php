@@ -17,8 +17,8 @@
  */
 ?>
 <div class="product-listing__products">
-    <aside class="product-listing__searchbar">
-        <form>
+    <aside class="product-listing__sorting">
+        <!-- <form>
             <div class="search">
                 <input type="text" id="search__job-title" placeholder="product name - e.g. &quot;Necklace&quot;">
                 <input type="submit" value="Search">
@@ -33,7 +33,7 @@
                 </select>
                 <i class="material-icons">expand_more</i>
             </div>
-        </form>
+        </form> -->
         <?php
             // /**
             //  * Sorting and breadcrumbs
@@ -41,7 +41,7 @@
             do_action( 'woocommerce_before_shop_loop' );
         ?>
     </aside>
-    <div class="product-listing__product-number">
+    <!-- <div class="product-listing__product-number">
         <span>284,038</span>
         <p>&nbsp;products found for:&nbsp;</p>
         <span>"necklace"</span>
@@ -51,4 +51,4 @@
             <span>20</span>
             <p>of 284,103 products</p>
         </div>
-    </div>
+    </div> -->
