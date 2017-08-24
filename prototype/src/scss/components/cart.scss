@@ -1,0 +1,107 @@
+.woocommerce-cart-form {
+
+    .cart {
+
+        &-container {
+            position: relative;
+            display: block;
+            margin: 0 -10px;
+        }
+
+        &-row-title {
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 16px;
+
+            .item-name {
+                flex-basis: auto;
+                flex-grow: 10;
+                border-bottom: 1px solid black;
+                margin: 10px;
+            }
+
+            .item-quantity {
+                flex-basis: 200px;
+                border-bottom: 1px solid black;
+                margin: 10px;
+            }
+
+            .item-price {
+                flex-basis: 100px;
+                border-bottom: 1px solid black;
+                margin: 10px;
+            }
+
+        }
+
+        &-row-items {
+            display: flex;
+            flex-wrap: nowrap;
+
+            .photo {
+                flex-basis: 160px;
+                padding: 10px;
+            }
+
+            .name {
+                flex-basis: auto;
+                flex-grow: 10;
+                padding: 10px;
+            }
+
+            .quantity {
+                flex-basis: 220px;
+                padding: 10px;
+            }
+
+            .price {
+                flex-basis: 120px;
+                padding: 10px;
+            }
+
+        }
+
+        &-row-final {
+            display: block;
+            padding: 10px;
+
+            input.button {
+
+            }
+
+        }
+
+        
+
+    }
+
+}
+
+.cart-collaterals {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 80px;
+
+    .cart-subtotal,
+    .order-total {
+        width: 320px;
+        display: flex;
+        flex-wrap: nowrap;
+
+        > span {
+            flex-basis: 100px;
+        } 
+
+        > p {
+            text-align: right;
+            flex-basis: 220px;
+            margin: 0;
+        }
+
+        small {
+            display: block;
+        }
+        
+    }
+
+}
