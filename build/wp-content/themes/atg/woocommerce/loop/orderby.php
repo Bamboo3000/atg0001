@@ -21,11 +21,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
+<div class="sort">
 <form id="atg-product-order-filter" class="woocommerce-ordering" method="get">
 	<select name="orderby" class="orderby" onchange="document.getElementById('atg-product-order-filter').submit()">
 		<?php foreach ( $catalog_orderby_options as $id => $name ) : ?>
 			<option value="<?php echo esc_attr( $id ); ?>" <?php selected( $orderby, $id ); ?>><?php echo esc_html( $name ); ?></option>
 		<?php endforeach; ?>
 	</select>
+	<i class="material-icons">expand_more</i>
 	<?php wc_query_string_form_fields( null, array( 'orderby', 'submit' ) ); ?>
 </form>
+</div>
