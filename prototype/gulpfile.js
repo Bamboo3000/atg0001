@@ -66,7 +66,7 @@ var log = function (event) {
 gulp.task('build-sass', function() {
     return gulp.src([src.scss + '/prototype.scss', src.scss + '/prototype.sass'])
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-        .pipe(autoprefixer('last 10 versions'))
+        .pipe(autoprefixer('last 20 versions'))
         .pipe(plugins.minifyCss())
         .pipe(gulp.dest(src.publicCss))
         .pipe(gulp.dest(src.buildCss))

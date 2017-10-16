@@ -33,13 +33,13 @@
 					</a>
 				</li>
 				<li>
-					<a href="/my-account">
+					<a href="<?= get_home_url(); ?>/my-account">
 						<span>account</span>
 						<i class="material-icons">person</i>
 					</a>
 				</li>
 				<li>
-					<a href="/cart">
+					<a href="<?= get_home_url(); ?>/cart">
 						<span>basket</span>
 						<i class="material-icons">shopping_basket</i>
 					</a>
