@@ -4,18 +4,19 @@
     padding: 10px;
     display: flex;
     flex-wrap: nowrap;
-    // -webkit-box-shadow: 0 0 7px 0 rgba(black, 0.3);
-    // box-shadow: 0 0 7px 0 rgba(black, 0.3);
+    border-radius: 6px;
+    box-shadow: 0 0 10px 0 rgba(black, 0.1);
 
     &__image {
         flex-basis: 66.66666%;
         max-width: 66.66666%;
-        padding-right: 30px;
+        padding-right: 20px;
 
         .main {
             display: block;
             position: relative;
             overflow: hidden;
+            border-radius: 6px;
 
             &:hover {
 
@@ -31,6 +32,12 @@
                 display: block;
                 width: 100%;
                 margin: 0 auto;
+                border-radius: 6px;
+
+                img {
+                    border-radius: 6px;
+                }
+
             }
 
             #siema-prev,
@@ -73,6 +80,8 @@
 
                 i {
                     left: 0;
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
                 }
 
                 &:hover {
@@ -91,6 +100,8 @@
 
                 i {
                     right: 0;
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
                 }
 
                 &:hover {
@@ -114,9 +125,10 @@
 
             .thumb {
                 flex-basis: calc(25% - 10px);
-                margin: 5px;
+                margin: 5px 5px 0 5px;
                 overflow: hidden;
                 cursor: pointer;
+                border-radius: 6px;
 
                 img {
                     transition: all 300ms ease;
@@ -140,18 +152,36 @@
         flex-basis: 33.33333%;
 
         h1 {
-            margin: 15px 0 30px 0;
-            font-size: 36px;
+            margin: 5px 0 10px 0;
+            font-size: 44px;
+            font-weight: 700;
+            letter-spacing: 0px;
             line-height: 1.1;
             font-family: $font-primary;
+            display: block;
+            width: 100%;
         }
 
         .price {
-            font-size: 52px;
-            margin: 0;
+            font-size: 20px;
+            margin: 0 0 30px 0;
+            letter-spacing: 0.5px;
             line-height: 1;
             font-weight: 700;
-            font-family: $font-primary;
+            font-family: $font-secondary;
+            color: $color-dark;
+            text-decoration: none!important;
+            display: block;
+            width: 100%;
+
+            del {
+                display: none;
+            }
+
+            ins {
+                text-decoration: none!important;
+            }
+
         }
 
         .btns {
@@ -159,6 +189,39 @@
             height: 46px;
             vertical-align: middle;
             margin-left: -4px;
+
+            a {
+
+                &:nth-child(1) {
+                    border-top-right-radius: 6px;
+                }
+
+                &:nth-child(2) {
+                    border-bottom-right-radius: 6px;
+                }
+                        
+            }
+
+        }
+
+        form.cart {
+            margin-bottom: 30px;
+            display: block;
+            width: 100%;
+
+            button.btn-default {
+                
+            }
+
+        }
+
+        &-summary {
+            
+            p {
+                font-size: 15px;
+                font-weight: 400;
+            }
+
         }
 
         .quantity {
@@ -167,6 +230,8 @@
             width: 50px;
             position: relative;
             overflow: hidden;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
 
             input {
                 appearance: none;
@@ -178,7 +243,7 @@
                 text-transform: uppercase;
                 width: 60px;
                 position: relative;
-                padding: 0 18px 0 0;
+                padding: 0 0 0 0;
                 color: $color-tertiary;
                 font-weight: 700;
                 letter-spacing: 0.5px;

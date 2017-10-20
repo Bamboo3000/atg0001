@@ -4,6 +4,8 @@
 	-ms-progress-appearance: none!important; 
 	appearance: none!important;
 	cursor: pointer;
+	border-radius: 6px;
+	overflow: hidden;
 
 	span {
 		text-align: center;
@@ -15,7 +17,7 @@
 	&-qty {
 		border: none;
 		text-align: center;
-		line-height: 23px;
+		line-height: 20px;
 		height: 23px;
 		width: 23px;
 		font-size: 20px;
@@ -55,14 +57,16 @@
 
 		&:before {
 			content: '';
-			left: 0;
-			height: 100%;
+			left: -1px;
+			top: -1px;
+			bottom: -1px;
 			width: 0;
 			display: block;
 			position: absolute;
 			transition: all 250ms ease;
 			background-color: $color-tertiary;
 			z-index: 0;
+			border-radius: 6px;
 		}
 
 		&:hover {
@@ -70,6 +74,7 @@
 
 			&:before {
 				width: 100%;
+				width: calc(100% + 3px);
 				opacity: 1;
 			}
 

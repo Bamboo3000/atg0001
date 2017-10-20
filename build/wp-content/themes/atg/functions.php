@@ -58,6 +58,7 @@ function atg_setup() {
 	 * to output valid HTML5.
 	 */
 	add_theme_support( 'html5', array(
+		'search-form',
 		'comment-form',
 		'comment-list',
 		'gallery',
@@ -577,3 +578,9 @@ add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 // 	$price = ( is_numeric( $sale_price ) ? wc_price( $sale_price ) : $sale_price );
 // 	return apply_filters( 'woocommerce_format_sale_price', $price, $regular_price, $sale_price );
 // }
+
+// function my_search_form($html)
+// {
+//     return str_replace('Search ', 'Search ', $html);
+// }
+// add_filter('get_search_form', 'my_search_form');

@@ -89,10 +89,11 @@
 				</div>
 			</div>
 		</footer>
-		<script type="text/javascript" src="<?= get_template_directory_uri(); ?>/assets/js/app.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+		<script type="text/javascript" src="<?= get_template_directory_uri(); ?>/assets/js/app.js" defer></script>
 		<noscript id="deferred-styles">
-			<link href="https://fonts.googleapis.com/css?family=Oranienbaum|PT+Sans:400,400i,700" rel="stylesheet">
-			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+			<!--<link href="https://fonts.googleapis.com/css?family=Oranienbaum" rel="stylesheet">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
 		</noscript>
     </div>
     <?php wp_footer(); ?>

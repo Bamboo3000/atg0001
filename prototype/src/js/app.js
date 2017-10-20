@@ -99,5 +99,17 @@ function decreaseValue(el)
 	document.getElementById(el).value = value;
 }
 
+function menuOpen()
+{
+	$('#menu-btn').on('click', function(e) {
+		e.preventDefault();
+		$('.menu-main-menu-container').toggleClass('active');
+	});
+}	
+
 loadCommentsCarousel();
 loadProductCarousel();
+
+$(document).ready(function() {
+	menuOpen();
+});

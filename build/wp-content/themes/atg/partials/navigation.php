@@ -28,21 +28,19 @@
 			<div class="right">
 				<ul class="tools">
 					<li>
-						<a href="">
-							<span>search</span>
-							<i class="material-icons">search</i>
-						</a>
+						<?php get_search_form(); ?>
+						<i class="material-icons">search</i>
 					</li>
 					<li>
 						<a href="<?= get_home_url(); ?>/my-account">
-							<span>account</span>
 							<i class="material-icons">person</i>
+							<span>login</span>
 						</a>
 					</li>
 					<li>
 						<a href="<?= get_home_url(); ?>/cart">
-							<span>basket</span>
 							<i class="material-icons">shopping_basket</i>
+							<span>cart</span>
 						</a>
 					</li>
 				</ul>
@@ -63,9 +61,9 @@
 			</div>
 			<div class="right">
 				<?php if ( has_nav_menu( 'menu' ) ) :
-				wp_nav_menu( array(
-					'theme_location' => 'menu',
-				) );
+					wp_nav_menu( array(
+						'theme_location' => 'menu',
+					) );
 				endif; ?>
 			</div>
 		</div>
