@@ -95,14 +95,15 @@ section {
 	margin: 0 auto;
 	padding: 0 15px;
 	display: block;
+	max-width: 970px;
 
-	@media(min-width: 1441px) {
-		max-width: 1170px;
-	}
+	// // @media(min-width: 1441px) {
+	// // 	max-width: 1170px;
+	// // }
 
-	@media(min-width: 1000px) {
-		max-width: 970px;
-	}
+	// @media(min-width: 1000px) {
+	// 	max-width: 970px;
+	// }
 
 	@media(max-width: 767px) {
 		padding: 0 10px;
