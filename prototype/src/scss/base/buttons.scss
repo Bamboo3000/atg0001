@@ -5,7 +5,6 @@
 	appearance: none!important;
 	cursor: pointer;
 	border-radius: 6px;
-	overflow: hidden;
 
 	span {
 		text-align: center;
@@ -53,7 +52,9 @@
 		color: $color-tertiary;
 		font-weight: 700;
 		letter-spacing: 0.5px;
-		background: transparent;
+		background-color: transparent;
+		outline: none;
+		margin: 0;
 
 		&:before {
 			content: '';

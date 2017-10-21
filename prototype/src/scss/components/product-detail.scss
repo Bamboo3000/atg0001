@@ -152,11 +152,11 @@
         flex-basis: 33.33333%;
 
         h1 {
-            margin: 5px 0 10px 0;
+            margin: 5px 0 20px 0;
             font-size: 44px;
             font-weight: 700;
             letter-spacing: 0px;
-            line-height: 1.1;
+            line-height: 1;
             font-family: $font-primary;
             display: block;
             width: 100%;
@@ -188,7 +188,8 @@
             display: inline-block;
             height: 46px;
             vertical-align: middle;
-            margin-left: -4px;
+            margin-left: -5px;
+            margin-right: 5px;
 
             a {
 
@@ -205,7 +206,9 @@
         }
 
         form.cart {
-            margin-bottom: 30px;
+            margin-bottom: 13px;
+            padding-bottom: 17px;
+            border-bottom: 1px solid $color-light;
             display: block;
             width: 100%;
 
@@ -237,8 +240,9 @@
                 appearance: none;
                 border: none;
                 text-align: center;
-                line-height: 38px;
-                font-size: 12px;
+                line-height: 39px;
+                font-size: 14px;
+                margin-top: 1px;
                 text-decoration: none;
                 text-transform: uppercase;
                 width: 60px;

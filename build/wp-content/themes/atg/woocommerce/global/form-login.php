@@ -39,7 +39,6 @@ if ( is_user_logged_in() ) {
 		<label for="password"><?php _e( 'Password', 'woocommerce' ); ?> <span class="required">*</span></label>
 		<input class="input-text" type="password" name="password" id="password" />
 	</p>
-	<div class="clear"></div>
 
 	<?php do_action( 'woocommerce_login_form' ); ?>
 
@@ -50,12 +49,8 @@ if ( is_user_logged_in() ) {
 		<label class="woocommerce-form__label woocommerce-form__label-for-checkbox inline">
 			<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php _e( 'Remember me', 'woocommerce' ); ?></span>
 		</label>
+		<a class="forgot-password" href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php _e( 'Lost your password?', 'woocommerce' ); ?></a>
 	</p>
-	<p class="lost_password">
-		<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php _e( 'Lost your password?', 'woocommerce' ); ?></a>
-	</p>
-
-	<div class="clear"></div>
 
 	<?php do_action( 'woocommerce_login_form_end' ); ?>
 
