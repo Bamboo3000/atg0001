@@ -88,6 +88,8 @@ function increaseValue(el)
 	var value = parseInt(document.getElementById(el).value, 10);
 	value++;
 	document.getElementById(el).value = value;
+	$('input[name="update_cart"]').removeProp('disabled');
+	console.log('dupa');
 }
 
 function decreaseValue(el)
@@ -97,6 +99,8 @@ function decreaseValue(el)
 		value--;
 	}
 	document.getElementById(el).value = value;
+	$('input[name="update_cart"]').removeProp('disabled');
+	console.log('dupa');
 }
 
 function menuOpen()

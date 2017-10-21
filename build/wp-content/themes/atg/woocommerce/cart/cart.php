@@ -71,10 +71,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 								} else {
 									echo apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $_product->get_name() ), $cart_item, $cart_item_key );
 								}
-
 								// Meta data
 								echo WC()->cart->get_item_data( $cart_item );
-
 								// Backorder notification
 								if ( $_product->backorders_require_notification() && $_product->is_on_backorder( $cart_item['quantity'] ) ) {
 									echo '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'woocommerce' ) . '</p>';
@@ -82,7 +80,9 @@ do_action( 'woocommerce_before_cart' ); ?>
 							?>
 							<?php
 								echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
-									'<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
+									'<a href="%s" class="remove btn btn-default small" aria-label="%s" data-product_id="%s" data-product_sku="%s">
+										<span>Remove</span>
+									</a>',
 									esc_url( WC()->cart->get_remove_url( $cart_item_key ) ),
 									__( 'Remove this item', 'woocommerce' ),
 									esc_attr( $product_id ),
@@ -90,7 +90,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								), $cart_item_key );
 							?>
 						</div>
-						<div class="quantity">
+						<div class="quantity-item">
 							<?php
 								if ( $_product->is_sold_individually() ) {
 									$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
@@ -102,7 +102,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 										'min_value'   => '0',
 									), $_product, false );
 								}
-
 								echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item );
 							?>
 						</div>
@@ -130,11 +129,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 			<?php do_action( 'woocommerce_cart_coupon' ); ?>
 		</div>
 	<?php } ?>
-
 	<input type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>" />
-
 	<?php do_action( 'woocommerce_cart_actions' ); ?>
-
 	<?php wp_nonce_field( 'woocommerce-cart' ); ?>
 	<?php do_action( 'woocommerce_cart_contents' ); ?>
 	<?php do_action( 'woocommerce_after_cart_contents' ); ?>

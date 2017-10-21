@@ -56,6 +56,11 @@
 		outline: none;
 		margin: 0;
 
+		&.small {
+			line-height: 28px;
+			padding: 0 15px;
+		}
+
 		&:before {
 			content: '';
 			left: -1px;
