@@ -621,6 +621,8 @@ form.checkout {
             display: block;
             width: 100%;
             font-size: 15px;
+            @include clearfix;
+            line-height: 1;
         }
 
         thead,
@@ -685,28 +687,39 @@ form.checkout {
 
             }
             
-            tr:last-child() {
+        }
 
-                td {
-                    float: none;
-                    text-align: left;
+        tfoot {
+
+            tr {
+
+                &:last-child(),
+                &:last-of-type(),
+                &:nth-child(4) {
+
+                    td {
+                        float: none;
+                        text-align: left;
+                    }
+
                 }
 
             }
 
         }
 
-        tfoot {
+    }
 
-            tr:last-child() {
+}
 
-                td {
-                    float: none;
-                    text-align: left;
-                }
+.return-to-shop {
+    
+    a {
+        color: $color-tertiary;
+        font-weight: 700;
 
-            }
-
+        &:hover {
+            text-decoration: underline;
         }
 
     }

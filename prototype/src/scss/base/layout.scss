@@ -79,6 +79,7 @@ section {
 	padding-top: 134px;
 	position: relative;
 	display: block;
+	min-height: calc(100vh - 400px);
 
 	@media(max-width: 767px) {
 		padding-top: 124px;
