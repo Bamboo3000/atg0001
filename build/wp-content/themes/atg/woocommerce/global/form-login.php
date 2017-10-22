@@ -46,8 +46,9 @@ if ( is_user_logged_in() ) {
 		<?php wp_nonce_field( 'woocommerce-login' ); ?>
 		<input type="submit" class="button" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>" />
 		<input type="hidden" name="redirect" value="<?php echo esc_url( $redirect ) ?>" />
-		<label class="woocommerce-form__label woocommerce-form__label-for-checkbox inline">
-			<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php _e( 'Remember me', 'woocommerce' ); ?></span>
+		<label class="remember-checkbox">
+			<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> 
+			<span><?php _e( 'Remember me', 'woocommerce' ); ?></span>
 		</label>
 		<a class="forgot-password" href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php _e( 'Lost your password?', 'woocommerce' ); ?></a>
 	</p>

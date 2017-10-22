@@ -240,3 +240,27 @@ section {
 	}
 
 }
+
+.woocommerce-error {
+	margin: 30px auto;
+	padding: 20px;
+	background-color: white;
+	border-radius: 6px;
+	box-shadow: 0 0 10px 0 rgba(black, 0.1);
+
+	strong {
+		color: red;
+	}
+
+	a {
+		font-weight: 700;
+		color: $color-tertiary;
+		margin-right: 5px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+	}
+
+}

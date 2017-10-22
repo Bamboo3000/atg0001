@@ -88,7 +88,7 @@ function increaseValue(el)
 	var value = parseInt(document.getElementById(el).value, 10);
 	value++;
 	document.getElementById(el).value = value;
-	$('input[name="update_cart"]').removeProp('disabled');
+	$('.btn-update-cart').prop('disabled', false);
 	console.log('dupa');
 }
 
@@ -99,7 +99,7 @@ function decreaseValue(el)
 		value--;
 	}
 	document.getElementById(el).value = value;
-	$('input[name="update_cart"]').removeProp('disabled');
+	$('.btn-update-cart').prop('disabled', false);
 	console.log('dupa');
 }
 

@@ -96,6 +96,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 									$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
 								} else {
 									$product_quantity = woocommerce_quantity_input( array(
+										'input_id'	  => "atg_qty_{$cart_item_key}",
 										'input_name'  => "cart[{$cart_item_key}][qty]",
 										'input_value' => $cart_item['quantity'],
 										'max_value'   => $_product->get_max_purchase_quantity(),
@@ -129,7 +130,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 			<?php do_action( 'woocommerce_cart_coupon' ); ?>
 		</div>
 	<?php } ?>
-	<input type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>" />
+	<input type="submit" class="button btn-update-cart" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>" />
 	<?php do_action( 'woocommerce_cart_actions' ); ?>
 	<?php wp_nonce_field( 'woocommerce-cart' ); ?>
 	<?php do_action( 'woocommerce_cart_contents' ); ?>

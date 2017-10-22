@@ -57,7 +57,7 @@
             border-radius: 6px;
             
             &:nth-child(2n + 1) {
-                background-color: rgba($color-light, 0.75);
+                background-color: rgba($color-light, 0.6);
             }
 
             .photo {
@@ -80,7 +80,7 @@
             .name {
                 flex-basis: auto;
                 flex-grow: 10;
-                padding: 10px;
+                padding: 10px 10px 10px 0;
                 display: flex;
                 flex-wrap: wrap;
                 align-items: flex-end;
@@ -95,11 +95,12 @@
 
                     &.remove {
                         align-self: flex-end;
-                        font-size: 12px;
-                        font-weight: 500;
+                        font-size: 11px;
+                        font-weight: 700;
                         display: inline-block;
                         width: auto;
                         margin-top: 15px;
+                        font-family: $font-secondary;
                     }
 
                 }
@@ -116,7 +117,7 @@
                 .quantity {
                     display: inline-block;
                     border: 2px solid rgba($color-tertiary, 1);
-                    width: calc(100% - 24px);
+                    width: 100%;
                     position: relative;
                     overflow: hidden;
                     border-top-left-radius: 6px;
@@ -140,7 +141,6 @@
                         background: transparent;
                         display: block;
         
-        
                         &:active,
                         &:focus {
                             outline: none;
@@ -154,7 +154,6 @@
                     display: inline-block;
                     height: 46px;
                     vertical-align: middle;
-                    margin-left: -5px;
         
                     a {
         
@@ -182,7 +181,7 @@
                 align-items: center;
 
                 span {
-                    font-size: 18px;
+                    font-size: 16px;
                     font-weight: 500;
                     letter-spacing: 0.5px;
 
@@ -206,8 +205,32 @@
 
         }
 
-        
+    }
 
+    .btn-update-cart {
+        -webkit-appearance: none!important;
+        -moz-appearance: none!important;
+        -ms-progress-appearance: none!important; 
+        appearance: none!important;
+        cursor: pointer;
+        border-radius: 6px;
+        border: 2px solid $color-tertiary;
+        font-family: $font-secondary;
+        text-align: center;
+        line-height: 42px;
+        font-size: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        position: relative;
+        padding: 0 35px;
+        background-color: $color-tertiary;
+        color: white;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        outline: none;
+        margin: 20px 0;
+        z-index: 99999;
     }
 
 }
@@ -216,27 +239,476 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 80px;
+    margin-top: -67px;
+
+    h2 {
+        font-size: 16px;
+        text-align: right;
+        margin-top: 0;
+        line-height: 1;
+        margin-bottom: 12px;
+        padding-bottom: 3px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .checkout-button {
+        cursor: pointer;
+        border-radius: 6px;
+        border: 2px solid $color-tertiary;
+        text-align: center;
+        line-height: 36px;
+        font-size: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+        position: relative;
+        padding: 0 20px;
+        background-color: $color-tertiary;
+        color: white;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        outline: none;
+        margin: 20px 0 0 0;
+        z-index: 99999;
+    }
 
     .cart-subtotal,
     .order-total {
-        width: 320px;
+        max-width: 320px;
+        min-width: 280px;
         display: flex;
         flex-wrap: nowrap;
+        text-align: right;
+        font-size: 14px;
 
-        > span {
-            flex-basis: 100px;
-        } 
+        th {
+            text-align: left;
+            width: 100px;
+        }
 
-        > p {
+        td {
             text-align: right;
-            flex-basis: 220px;
-            margin: 0;
+            width: 100%;
         }
 
         small {
             display: block;
+            margin-top: 2px;
+            font-size: 12px;
         }
         
+    }
+
+    .order-total {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+}
+
+.woocommerce-info {
+    
+    .showlogin {
+        color: $color-tertiary;
+        font-weight: 700;
+        margin-left: 3px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+}
+
+form.checkout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 6px;
+    padding: 0;
+    margin: 20px 0 90px 0;
+    box-shadow: 0 0 10px 0 rgba(black, 0.1);
+
+    .woocommerce-NoticeGroup,
+    .woocommerce-NoticeGroup-checkout {
+        flex-basis: 100%;
+        padding: 20px;
+    }
+
+    .col2-set {
+        flex-basis: 50%;
+        padding: 20px;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+
+    .woocommerce-checkout-review-order {
+        flex-basis: 50%;
+        align-self: flex-start;
+        padding: 20px;
+    }
+
+    .woocommerce-additional-fields {
+        
+        h3 {
+            margin-top: 1em;
+        }
+    
+    }
+
+    p {
+        margin: 10px auto;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 5px;
+        display: block;
+        font-weight: 400;
+        font-family: $font-secondary;
+        font-size: 14px;
+
+        abbr {
+            font-size: 14px;
+            color: red;
+            font-family: $font-secondary;
+        }
+
+        span {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+    }
+
+    input,
+    textarea {
+        display: block;
+        width: 100%;
+
+        &.input-checkbox {
+            display: inline-block;
+            margin: 5px 3px 0 0;
+            padding: 0;
+            width: 14px;
+            height: 14px;
+        }
+
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    textarea {
+        border-radius: 6px;
+        background-color: $color-light;
+        width: 100%;
+        display: block;
+        appearance: none;
+        border: none;
+        outline: 0;
+        font-size: 14px;
+        font-weight: 500;
+        height: 36px;
+        padding: 0 15px;
+        font-family: $font-secondary;
+    }
+
+    textarea {
+        padding: 10px;
+        min-height: 100px;
+    }
+
+    .woocommerce-checkout-review-order-table {
+        display: block;
+        width: 100%;
+
+        tr,
+        thead,
+        tbody,
+        tfoot {
+            display: block;
+            width: 100%;
+        }
+
+        thead {
+            margin-bottom: 15px;
+        }
+
+        thead,
+        tbody {
+            border-bottom: 1px solid #666;
+        }
+
+        .cart_item {
+            margin-bottom: 3px;
+            display: block;
+            font-size: 14px;
+        }
+
+        .product-name {
+            min-width: 120px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .product-total {
+            text-align: right;
+            display: block;
+            width: auto;
+            float: right;
+        }
+
+        .cart-subtotal {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .order-total {
+            margin-top: 2px;
+        }
+
+        .cart-subtotal,
+        .order-total {
+
+            th {
+                min-width: 120px;
+                display: inline-block;
+                text-align: left;
+            }
+
+            td {
+                text-align: right;
+                display: block;
+                width: auto;
+                float: right;
+
+                strong,
+                small {
+                    display: block;
+                }
+
+                small {
+                    font-size: 12px;
+                    margin-top: 2px;
+                }
+
+            }
+
+        }
+
+    }
+
+    .woocommerce-checkout-payment {
+        display: block;
+        position: relative;
+        margin-top: 50px;
+
+        ul {
+
+            li {
+
+                input[type="radio"],
+                label {
+                    display: inline-block;
+                    width: auto;
+                    margin: 0;
+                    font-size: 15px;
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                    
+                    img {
+                        margin-left: 5px;
+                    }
+
+                }
+
+                input[type="radio"] {
+                    width: 16px;
+                    height: 16px;
+                    margin: 0 3px 0 0;
+                }
+
+                .payment_box {
+
+                    p {
+                        font-size: 14px;
+                        margin: 5px 0 15px 0;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .place-order {
+            margin-top: 30px;
+
+            input.button {
+                cursor: pointer;
+                border-radius: 6px;
+                border: 2px solid $color-tertiary;
+                text-align: center;
+                line-height: 36px;
+                font-size: 12px;
+                text-decoration: none;
+                text-transform: uppercase;
+                display: block;
+                width: 100%;
+                position: relative;
+                padding: 0 20px;
+                background-color: $color-tertiary;
+                color: white;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+                outline: none;
+                margin: 20px 0 0 0;
+                z-index: 99999;
+            }
+
+        }
+
+    }
+
+}
+
+.woocommerce-order {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 6px;
+    padding: 0;
+    margin: 20px 0 90px 0;
+    box-shadow: 0 0 10px 0 rgba(black, 0.1);
+
+    > section {
+        flex-basis: 50%;
+        padding: 20px;
+
+        h2 {
+            margin-top: 0;
+        }
+
+        ul {
+
+            li {
+                display: block;
+                margin: 2px 0;
+                font-size: 15px;
+
+                strong {
+                    float: right;
+                }
+
+            }
+
+        }
+
+        tr,
+        thead,
+        tbody,
+        tfoot {
+            display: block;
+            width: 100%;
+            font-size: 15px;
+        }
+
+        thead,
+        tbody {
+            border-bottom: 1px solid #666;
+            margin-bottom: 15px;
+        }
+
+        .cart_item {
+            margin-bottom: 3px;
+            display: block;
+            font-size: 14px;
+        }
+
+        .product-name {
+            min-width: 120px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .product-total {
+            text-align: right;
+            display: block;
+            width: auto;
+            float: right;
+        }
+
+        .cart-subtotal {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .order-total {
+            margin-top: 2px;
+        }
+
+        .cart-subtotal,
+        .order-total,
+        tfoot {
+
+            th {
+                min-width: 120px;
+                display: inline-block;
+                text-align: left;
+            }
+
+            td {
+                text-align: right;
+                display: block;
+                width: auto;
+                float: right;
+
+                strong,
+                small {
+                    display: block;
+                }
+
+                small {
+                    font-size: 12px;
+                    margin-top: 2px;
+                }
+
+            }
+            
+            tr:last-child() {
+
+                td {
+                    float: none;
+                    text-align: left;
+                }
+
+            }
+
+        }
+
+        tfoot {
+
+            tr:last-child() {
+
+                td {
+                    float: none;
+                    text-align: left;
+                }
+
+            }
+
+        }
+
     }
 
 }
