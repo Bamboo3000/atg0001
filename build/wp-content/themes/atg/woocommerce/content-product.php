@@ -31,7 +31,13 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
 	<div class="content">
 		<div class="img">
-			<?php do_action( 'woocommerce_before_shop_loop_item_title' ); ?>
+			<picture>
+				<source srcset="<?= get_the_post_thumbnail_url( $post, 'atg-product-small'); ?>" media="(min-width: 767px)" type="image/jpeg">
+				<source srcset="<?= get_the_post_thumbnail_url( $post, 'atg-product-medium'); ?>" media="(min-width: 640px)" type="image/jpeg">
+				<source srcset="<?= get_the_post_thumbnail_url( $post, 'atg-product-small'); ?>" media="(min-width: 360px)" type="image/jpeg">
+				<source srcset="<?= get_the_post_thumbnail_url( $post, 'atg-product-xsmall'); ?>" media="(min-width: 1px)" type="image/jpeg">
+				<img src="<?= get_the_post_thumbnail_url( $post, 'atg-product-medium'); ?>" alt="">
+			</picture>
 		</div>
 		<div class="description">
 			<p class="title">

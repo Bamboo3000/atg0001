@@ -1,9 +1,7 @@
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
-		<script type="text/javascript" src="<?= get_template_directory_uri(); ?>/assets/js/app.js" defer></script>
-		<noscript id="deferred-styles">
-			<!--<link href="https://fonts.googleapis.com/css?family=Oranienbaum" rel="stylesheet">
-			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
-		</noscript>
+		<!-- <noscript id="deferred-styles">
+			<link href="https://fonts.googleapis.com/css?family=Oranienbaum" rel="stylesheet">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		</noscript> -->
 	</div>
 	<footer class="footer">
 		<div class="container">
@@ -14,16 +12,22 @@
 						<hr>
 						<div class="footer__content">
 							<p>
-								All That Glitters Ltd
+								Gliterrealm
 							</p>
 							<p>
-								64 Coldhams Lane<br/>
-								CB1 9LQ<br/> 
-								Cambridge
+								<a href="https://www.google.co.uk/maps/dir//3+Silverwood+Cl,+Cambridge+CB1+3HA/@52.2058281,0.1430968,16.62z/data=!4m17!1m7!3m6!1s0x47d8708a034514af:0x2805b1e4a56b49e3!2s3+Silverwood+Cl,+Cambridge+CB1+3HA!3b1!8m2!3d52.2073572!4d0.1438173!4m8!1m0!1m5!1m1!1s0x47d8708a034514af:0x2805b1e4a56b49e3!2m2!1d0.1438173!2d52.2073572!3e3" target="_blank">
+									3 Sliverwood Close<br/>
+									Cambridge<br/> 
+									CB1 3HA
+								</a>
 							</p>
 							<p>
-								+44 7730 045738<br/>
+								<a href="tel:+447858544278">
+									+44 (0) 785 854 4278
+								</a><br/>
+								<a href="mailto:shop@allthatglitters.london">
 								shop@allthatglitters.london
+								</a>
 							</p>
 						</div>
 					</div>
@@ -96,6 +100,8 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+	<script type="text/javascript" src="<?= get_template_directory_uri(); ?>/assets/js/app.js" defer></script>
     <?php wp_footer(); ?>
 </body>
 </html>
