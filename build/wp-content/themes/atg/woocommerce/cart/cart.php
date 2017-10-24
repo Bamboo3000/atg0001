@@ -55,7 +55,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 					<div class="cart-row-items">
 						<div class="photo">
 							<?php
-								$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
+								$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image('atg-product-xsmall'), $cart_item, $cart_item_key );
 
 								if ( ! $product_permalink ) {
 									echo $thumbnail;
