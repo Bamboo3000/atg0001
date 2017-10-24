@@ -224,6 +224,7 @@
                 cursor: pointer;
                 background-color: white;
                 border-radius: 6px;
+                border: 1px solid #eee;
 
                 @media(max-width: 767px) {
                     padding: 8px;
@@ -234,8 +235,7 @@
                 }
 
                 &:hover {
-                    -webkit-box-shadow: 0 0 15px 0 rgba(black, 0.1);
-                    box-shadow: 0 0 15px 0 rgba(black, 0.1);
+                    box-shadow: 0 5px 10px 0 rgba(black, 0.1);
                     transform: translateY(-10px);
 
                     img {

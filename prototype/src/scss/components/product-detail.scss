@@ -5,12 +5,28 @@
     display: flex;
     flex-wrap: nowrap;
     border-radius: 6px;
-    box-shadow: 0 0 10px 0 rgba(black, 0.1);
+    box-shadow: 0 5px 10px 0 rgba(black, 0.1);
+    border: 1px solid #eee;
+
+    @media(max-width: 640px) {
+        flex-wrap: wrap;
+    }
 
     &__image {
         flex-basis: 66.66666%;
         max-width: 66.66666%;
         padding-right: 20px;
+
+        @media(max-width: 767px) {
+            flex-basis: 60%;
+            max-width: 60%;
+        }
+
+        @media(max-width: 640px) {
+            flex-basis: 100%;
+            max-width: 100%;
+            padding-right: 0;
+        }
 
         .main {
             display: block;
@@ -150,6 +166,15 @@
 
     &__text {
         flex-basis: 33.33333%;
+
+        @media(max-width: 767px) {
+            flex-basis: 40%;
+        }
+
+        @media(max-width: 640px) {
+            flex-basis: 100%;
+            margin-top: 30px;
+        }
 
         h1 {
             margin: 5px 0 20px 0;
