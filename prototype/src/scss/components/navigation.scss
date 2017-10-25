@@ -489,7 +489,7 @@
 				background-color: white;
 				width: auto;
 				list-style: none;
-				padding: 5px;
+				padding: 5px 10px;
 				transition: all 300ms ease;
 				display: none;
 				z-index: 9999;
@@ -510,8 +510,8 @@
 
 					a {
 						display: block;
-						height: 30px;
-						line-height: 30px;
+						height: 32px;
+						line-height: 32px;
 						font-size: 12px;
 						font-weight: 500;
 						color: $color-primary;
