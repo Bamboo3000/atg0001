@@ -486,7 +486,7 @@
 			.sub-menu {
 				position: absolute;
 				top: 90px;
-				background-color: $color-light;
+				background-color: white;
 				width: auto;
 				list-style: none;
 				padding: 5px;
@@ -498,7 +498,7 @@
 					float: none;
 					position: relative;
 					z-index: 9;
-					background-color: $color-light;
+					background-color: white;
 
 					&:first-of-type {
 						padding-top: 5px;
