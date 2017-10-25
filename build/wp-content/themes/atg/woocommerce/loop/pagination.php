@@ -34,7 +34,7 @@ if ( $wp_query->max_num_pages <= 1 ) {
 			'add_args'     => false,
 			'current'      => max( 1, get_query_var( 'paged' ) ),
 			'total'        => $wp_query->max_num_pages,
-			'prev_text'    => '<i class="material-icons">chevron_left</i><span>Previous</span>',
+			'prev_text'    => '<i class="material-icons">chevron_left</i><span>Prev</span>',
 			'next_text'    => '<span>Next</span><i class="material-icons">chevron_right</i>',
 			'type'         => 'list',
 			'end_size'     => 3,

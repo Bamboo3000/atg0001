@@ -327,7 +327,7 @@
     &__pagination {
         display: block;
         width: 100%;
-        line-height: 28px;
+        line-height: 26px;
         padding: 12px 0;
         margin: 20px 0 40px 0;
         text-align: center;
@@ -339,31 +339,43 @@
 
         .prev,
         .next {
+            height: 28px;
+            line-height: 26px;
+            transition: all 200ms ease;
+            padding: 0 3px;
 
             span,
             i {
                 vertical-align: middle;
                 display: inline-block;
                 transition: all 200ms ease;
+                line-height: 26px;
+                height: 28px;
             }
 
             span {
                 font-size: 14px;
                 text-transform: uppercase;
-                margin: 0 -4px;
+                margin: 0;
+                padding: 0 3px;
             }
 
             i {
-                font-size: 32px;
+                font-size: 28px;
             }
 
             &:hover {
-                color: $color-tertiary;
+                background-color: $color-tertiary;
+                
+                i,
+                span {
+                    color: white;
+                }
 
                 &.prev {
 
                     i {
-                        transform: translateX(-8px) scale(1.1);
+                        transform: translateX(-3px) scale(1.1);
                     }
 
                 }
@@ -371,7 +383,7 @@
                 &.next {
 
                     i {
-                        transform: translateX(8px) scale(1.1);
+                        transform: translateX(3px) scale(1.1);
                     }
 
                 }
@@ -382,19 +394,24 @@
 
         ul {
             display: inline-block;
-            margin: 0 32px;
+            margin: 0 10px;
 
             li {
                 display: inline-block;
                 line-height: 28px;
-                vertical-align: -2px;
-                margin: 0 1px;
+                vertical-align: middle;
+                margin: 0;
 
                 a {
                     padding: 0 10px;
                     display: block;
                     border-radius: 4px;
                     transition: all 200ms ease;
+                }
+
+                span {
+                    display: block;
+                    padding: 0 10px;
                 }
 
                 &:hover,
