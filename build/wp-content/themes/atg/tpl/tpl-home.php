@@ -70,29 +70,29 @@
 			<div id="comments-carousel">
 				<div>
 					<p class="comment">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada rhoncus nisl a condimentum. Fusce tincidunt, est eget egestas molestie, ante erat venenatis urna, sit amet rutrum tortor libero id felis. Vestibulum quam nisi, varius vel eros eget, egestas aliquam diam. Cras vel lorem pretium, hendrerit tellus eu, auctor diam. Nulla eu risus sit amet justo lacinia tempor.
+						‘Thank you so much! Lovely presentation and a great quality, special handbag! Lovely to have it hand delivered as well. All the best!’
 					</p>
 					<span>-</span>
 					<p class="author">
-						Monica Jones
+						Agnieszka
 					</p>
 				</div>
 				<div>
 					<p class="comment">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada rhoncus nisl a condimentum. Fusce tincidunt, est eget egestas molestie, ante erat venenatis urna, sit amet rutrum tortor libero id felis. Vestibulum quam nisi, varius vel eros eget, egestas aliquam diam. Cras vel lorem pretium, hendrerit tellus eu, auctor diam. Nulla eu risus sit amet justo lacinia tempor.
+						‘Thank you so much, I love my bag and scarf so much! The box it came in was gorgeous, just like Xmas come early, will be back soon!! Xxx’
 					</p>
 					<span>-</span>
 					<p class="author">
-						Monica Jones
+						Julie
 					</p>
 				</div>
 				<div>
 					<p class"=comment">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada rhoncus nisl a condimentum. Fusce tincidunt, est eget egestas molestie, ante erat venenatis urna, sit amet rutrum tortor libero id felis. Vestibulum quam nisi, varius vel eros eget, egestas aliquam diam. Cras vel lorem pretium, hendrerit tellus eu, auctor diam. Nulla eu risus sit amet justo lacinia tempor.
+						‘Love, love, LOVE my new scarf! It’s perfect to accessorise any outfit, and to wear in the evenings when it gets a little cold! Awesome quality too!’
 					</p>
 					<span>-</span>
 					<p class="author">
-						Monica Jones
+						Steph
 					</p>
 				</div>
 			</div>
