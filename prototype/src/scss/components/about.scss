@@ -1,0 +1,31 @@
+.about {
+    margin: 30px 0;
+
+    &__pod {
+        background-color: white;
+		position: relative;
+        border-radius: 6px;
+        padding: 20px;
+        box-shadow: 0 5px 10px 0 rgba(black, 0.1);
+        @include clearfix;
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+
+        img {
+            max-width: 360px;
+            float: left;
+            margin-right: 20px;
+            border-radius: 6px;
+        }
+
+        p {
+            line-height: 1.44;
+        }
+
+    }
+
+}

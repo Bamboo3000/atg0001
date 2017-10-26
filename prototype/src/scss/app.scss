@@ -3,12 +3,7 @@
 @import "base/variables";
 @import "base/typography";
 @import "base/buttons";
-// @import "base/mixins";
 @import "base/layout";
-
-// PLUGINS
-// @import "plugins/owl.carousel.min.css";
-// @import "plugins/owl.carousel.theme";
 
 // MODULES
 @import "components/navigation";
@@ -23,17 +18,4 @@
 @import "components/lookbook";
 @import "components/cart";
 @import "components/login";
-
-// @import "modules/property-filters";
-// @import "modules/property-listing";
-// @import "modules/property-single";
-// @import "modules/contact";
-// @import "modules/news";
-// @import "modules/article";
-// @import "modules/about";
-// @import "modules/auction";
-// @import "modules/services-packages";
-// @import "modules/appraisal";
-// @import "modules/register";
-// @import "modules/enquire";
-// @import "modules/pnf";
+@import "components/about";
