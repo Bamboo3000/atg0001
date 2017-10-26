@@ -12,7 +12,7 @@
 						<hr>
 						<div class="footer__content">
 							<p>
-								Gliterrealm
+								Glitterrealm
 							</p>
 							<p>
 								<a href="https://www.google.co.uk/maps/dir//3+Silverwood+Cl,+Cambridge+CB1+3HA/@52.2058281,0.1430968,16.62z/data=!4m17!1m7!3m6!1s0x47d8708a034514af:0x2805b1e4a56b49e3!2s3+Silverwood+Cl,+Cambridge+CB1+3HA!3b1!8m2!3d52.2073572!4d0.1438173!4m8!1m0!1m5!1m1!1s0x47d8708a034514af:0x2805b1e4a56b49e3!2m2!1d0.1438173!2d52.2073572!3e3" target="_blank">
@@ -26,7 +26,7 @@
 									+44 (0) 785 854 4278
 								</a><br/>
 								<a href="mailto:shop@allthatglitters.london">
-								shop@allthatglitters.london
+									shop@allthatglitters.london
 								</a>
 							</p>
 						</div>
@@ -37,16 +37,12 @@
 						<h5 class="footer__title">Sitemap</h5>
 						<hr>
 						<div class="footer__content">
-							<p>
-								Home<br/>
-								Shop<br/>
-								Lookbook<br/>
-								About<br/>
-								Contact<br/>
-								Basket<br/>
-								Cookies<br/>
-								Privacy Policy
-							</p>			
+							<?php if ( has_nav_menu( 'menu' ) ) :
+								wp_nav_menu( array(
+									'theme_location' => 'menu',
+									'depth'			 => 1
+								) );
+							endif; ?>			
 						</div>
 					</div>
 				</div>

@@ -33,7 +33,9 @@ function atg_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'atg-featured-image', 1200, 9999);
+	add_image_size( 'atg-image-big', 1200, 9999);
+	add_image_size( 'atg-image-medium', 800, 9999);
+	add_image_size( 'atg-image-small', 600, 9999);
 	add_image_size( 'atg-product-big', 720, 720, true );
 	add_image_size( 'atg-product-medium', 400, 400, true );
 	add_image_size( 'atg-product-small', 300, 300, true );

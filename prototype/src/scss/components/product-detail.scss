@@ -177,7 +177,7 @@
         }
 
         h1 {
-            margin: 5px 0 20px 0;
+            margin: 5px 0 35px 0;
             font-size: 44px;
             font-weight: 700;
             letter-spacing: 0px;
@@ -188,8 +188,8 @@
         }
 
         .price {
-            font-size: 20px;
-            margin: 0 0 30px 0;
+            font-size: 21px;
+            margin: 0 0 20px 0;
             letter-spacing: 0.5px;
             line-height: 1;
             font-weight: 700;
@@ -254,8 +254,10 @@
 
         .quantity {
             display: inline-block;
+            vertical-align: middle;
             border: 2px solid rgba($color-tertiary, 1);
             width: 50px;
+            height: 46px;
             position: relative;
             overflow: hidden;
             border-top-left-radius: 6px;
