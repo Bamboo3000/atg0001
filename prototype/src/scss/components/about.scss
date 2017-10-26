@@ -26,6 +26,15 @@
             line-height: 1.44;
         }
 
+        a {
+            text-decoration: underline;
+
+            &:hover {
+                color: $color-tertiary;
+            }
+
+        }
+
     }
 
 }
