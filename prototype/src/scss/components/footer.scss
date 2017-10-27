@@ -5,20 +5,46 @@
 	display: block;
 	margin: 0;
 
+	@media(max-width: 800px) {
+		padding: 40px 0 0 0;
+	}
+
 	&__grid-container {
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 -20px;
+		
+		@media(max-width: 420px) {
+			margin: 0 auto;
+		}
+	
 	}
 
 	&__grid {
 		flex-basis: 25%;
 		width: 25%;
+
+		@media(max-width: 600px) {
+			flex-basis: 50%;
+			width: 50%;
+		}
+
+		@media(max-width: 420px) {
+			flex-basis: 100%;
+			width: 100%;
+			text-align: center;
+		}
+
 	}
 
 	&__grid-content {
 		padding: 20px;
 		color: $color-light;
+
+		@media(max-width: 420px) {
+			padding: 20px 40px;
+		}
+
 	}
 
 	&__title {
@@ -34,6 +60,11 @@
 		background-color: $color-tertiary;
 		outline: none;
 		border: none;
+
+		@media(max-width: 420px) {
+			margin: 0 auto;
+		}
+
 	}
 
 	&__content {
@@ -57,6 +88,15 @@
 			ul li > del,
 			ul li > ins {
 				display: none;
+			}
+
+		}
+
+		@media(max-width: 800px) {
+			
+			.btn,
+			.btn-defualt {
+				padding: 0 20px!important;
 			}
 
 		}

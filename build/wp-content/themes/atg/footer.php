@@ -30,6 +30,15 @@
 				</div>
 				<div class="footer__grid">
 					<div class="footer__grid-content">
+						<h5 class="footer__title">Hot products</h5>
+						<hr>
+						<div class="footer__content">
+							<?php dynamic_sidebar( 'sidebar-2' ); ?>
+						</div>
+					</div>
+				</div>
+				<div class="footer__grid">
+					<div class="footer__grid-content">
 						<h5 class="footer__title">Sitemap</h5>
 						<hr>
 						<div class="footer__content">
@@ -39,15 +48,6 @@
 									'depth'			 => 1
 								) );
 							endif; ?>			
-						</div>
-					</div>
-				</div>
-				<div class="footer__grid">
-					<div class="footer__grid-content">
-						<h5 class="footer__title">Hot products</h5>
-						<hr>
-						<div class="footer__content">
-							<?php dynamic_sidebar( 'sidebar-2' ); ?>
 						</div>
 					</div>
 				</div>
