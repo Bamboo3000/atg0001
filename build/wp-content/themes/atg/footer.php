@@ -72,7 +72,7 @@
 				<div class="footer__lower__grid-container">
 					<div class="footer__lower__grid left">
 						<p>
-							Copyright © 2017 All That Glitters Ltd.
+							Copyright © 2017 All That Glitters.
 						</p>
 					</div>
 					<div class="footer__lower__grid right">
