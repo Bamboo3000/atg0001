@@ -102,11 +102,16 @@ section.home {
 
 			.summary {
 				font-size: 16px;
-				margin: 25px 0 0 0;
+				margin: 20px 0 0 0;
 			}
 
 			.btn {
 				margin: 20px 0 0 0;
+
+				@media(max-width: 480px) {
+					margin: 10px 0 0 0;
+				}
+
 			}
 
 		}
