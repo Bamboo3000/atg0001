@@ -113,11 +113,13 @@ section.home {
 
 		.text {
 			display: flex;
-			padding: 0 100px;
+			padding: 0 15px;
 			text-align: center;
 
 			&-container {
 				align-self: center;
+				display: block;
+				margin: 0 auto;
 			}
 
 			.title {
@@ -129,7 +131,8 @@ section.home {
 				font-family: $font-primary;
 				line-height: 1.1;
 
-				a {
+				a,
+				span {
 					color: $color-tertiary;
 					text-decoration: underline;
 				}

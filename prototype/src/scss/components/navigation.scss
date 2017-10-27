@@ -302,7 +302,6 @@
 		width: 36px;
 		height: auto;
 		cursor: pointer;
-		pointer-events: none;
 		z-index: 9999999999999999;
 
 		@media(max-width: 767px) {
@@ -453,7 +452,8 @@
 			&:hover,
 			&.current-menu-item,
 			&.current_page_item,
-			&.current_page_parent {
+			&.current_page_parent,
+			&.open {
 
 				a {
 					color: $color-tertiary;
@@ -477,14 +477,6 @@
 
 			}
 
-			&:hover {
-
-				.sub-menu {
-					display: block;
-				}
-
-			}
-
 			.sub-menu {
 				position: absolute;
 				top: 90px;
@@ -493,10 +485,15 @@
 				width: auto;
 				list-style: none;
 				padding: 5px 12px;
-				transition: all 300ms ease;
 				display: none;
 				z-index: 9999;
 				box-shadow: 0 5px 5px 0px rgba(black, 0.1);
+
+				@media(max-width: 767px) {
+					position: relative;
+					top: auto;
+					margin: 0;
+				}
 
 				li {
 					float: none;

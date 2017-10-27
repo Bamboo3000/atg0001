@@ -111,9 +111,19 @@ function menuOpen()
 	});
 }	
 
+function subMenu()
+{
+	$('*[href="#submenu"]').on('click', function(e) {
+		e.preventDefault();
+		$(this).parent().toggleClass('open');
+		$(this).next('.sub-menu').slideToggle(250);
+	});
+}
+
 loadCommentsCarousel();
 loadProductCarousel();
 
 $(document).ready(function() {
 	menuOpen();
+	subMenu();
 });

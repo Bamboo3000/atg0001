@@ -50,8 +50,9 @@
 			<div class="text">
 				<div class="text-container">
 					<p class="title">
-						Visit our
-						<a href="/lookbook">Lookbook</a>
+						Lookbook<br/>
+						<span>Coming soon!</span>
+						<!-- <a href="/lookbook">Lookbook</a> -->
 					</p>
 				</div>
 			</div>
