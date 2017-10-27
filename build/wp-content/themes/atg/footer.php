@@ -97,7 +97,7 @@
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
-	<script type="text/javascript" src="<?= get_template_directory_uri(); ?>/assets/js/app.js" defer></script>
+	<script type="text/javascript" src="<?= get_template_directory_uri(); ?>/assets/js/app.js?v=1.1" defer></script>
     <?php wp_footer(); ?>
 </body>
 </html>
