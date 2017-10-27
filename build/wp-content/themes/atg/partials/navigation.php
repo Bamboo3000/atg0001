@@ -31,7 +31,7 @@
 						<form role="search" method="get" class="search-form woocommerce-product-search" action="<?php get_site_url(); ?>">
 							<label>
 								<span class="screen-reader-text">Search for:</span>
-								<input type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="Search products..." value="" name="s">
+								<input type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="Find products..." value="" name="s">
 							</label>
 							<input type="submit" class="search-submit" value="Search">
 							<input type="hidden" name="post_type" value="product">
