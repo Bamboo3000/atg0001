@@ -23,10 +23,19 @@ section.home {
 			flex-basis: 50%;
 		}
 
+		@media(max-width: 480px) {
+			flex-basis: 100%;
+			margin: 10px;
+		}
+
 		.image {
 			overflow: hidden;
 			margin: 10px;
 			border-radius: 6px;
+
+			@media(max-width: 480px) {
+				order: 1;
+			}
 
 			img {
 				transition: all 300ms ease;
@@ -44,6 +53,15 @@ section.home {
 				padding: 0 50px;
 			}
 
+			@media(max-width: 600px) {
+				padding: 0 20px;
+			}
+
+			@media(max-width: 480px) {
+				order: 100;
+				margin: 20px auto;
+			}
+
 			&-container {
 				align-self: center;
 				margin: 0 auto;
@@ -58,6 +76,12 @@ section.home {
 				position: relative;
 				font-family: $font-primary;
 				line-height: 1.1;
+
+				@media(max-width: 600px) {
+					font-size: 36px;
+					margin: 0 0 20px 0;
+				}
+
 			}
 
 			hr {
@@ -91,8 +115,19 @@ section.home {
 		flex-wrap: nowrap;
 		border-radius: 6px;
 
+		@media(max-width: 480px) {
+			flex-wrap: wrap;
+		}
+
 		.text {
 			flex-basis: 33.33333%;
+
+			@media(max-width: 480px) {
+				flex-basis: 100%;
+				order: 100;
+				margin: 20px auto;
+			}
+
 		}
 
 		.image {
@@ -101,8 +136,10 @@ section.home {
 			flex-basis: 66.66666%;
 			border-radius: 6px;
 
-			&:last-of-type {
-				margin-left: 0;
+			@media(max-width: 480px) {
+				flex-basis: 100%;
+				order: 1;
+				margin: 10px;
 			}
 
 			img {
@@ -131,6 +168,10 @@ section.home {
 				font-family: $font-primary;
 				line-height: 1.1;
 
+				@media(max-width: 600px) {
+					font-size: 36px;
+				}
+
 				a,
 				span {
 					color: $color-tertiary;
@@ -151,6 +192,14 @@ section.home {
 		background-color: white;
 		border-radius: 6px;
 
+		@media(max-width: 800px) {
+			padding: 30px 100px;
+		}
+
+		@media(max-width: 480px) {
+			padding: 20px 50px;
+		}
+
 		.title {
 			font-size: 48px;
 			margin: 0 0 25px 0;
@@ -159,18 +208,39 @@ section.home {
 			position: relative;
 			font-family: $font-primary;
 			line-height: 1.1;
+
+			@media(max-width: 600px) {
+				font-size: 36px;
+				margin: 0 0 15px 0;
+			}
+
+			@media(max-width: 480px) {
+				font-size: 28px;
+				margin: 0;
+			}
+
 		}
 
 		.comment {
 			margin-bottom: 5px;
 			font-size: 18px;
 			font-weight: 400;
+
+			@media(max-width: 480px) {
+				font-size: 16px;
+			}
+
 		}
 
 		.author {
 			margin-top: 5px;
 			font-size: 16px;
 			font-weight: 500;
+
+			@media(max-width: 480px) {
+				font-size: 14px;
+			}
+
 		}
 
 		#comments-carousel {
@@ -218,6 +288,14 @@ section.home {
 				transform: translateX(-10px);
 			}
 
+			@media(max-width: 800px) {
+				left: 30px;
+			}
+
+			@media(max-width: 480px) {
+				left: 5px;
+			}
+
 		}
 
 		#siema-next {
@@ -225,6 +303,14 @@ section.home {
 
 			&:hover {
 				transform: translateX(10px);
+			}
+
+			@media(max-width: 800px) {
+				right: 30px;
+			}
+		
+			@media(max-width: 480px) {
+				right: 5px;
 			}
 
 		}

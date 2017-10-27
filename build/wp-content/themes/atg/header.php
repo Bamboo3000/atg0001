@@ -6,7 +6,7 @@
 	<title>All That Glitters</title>
 	<link href="https://fonts.googleapis.com/css?family=Oranienbaum" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/css/prototype.css?v=1.21">
+	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/css/prototype.css?v=1.22">
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
