@@ -51,15 +51,7 @@
 						<h5 class="footer__title">Hot products</h5>
 						<hr>
 						<div class="footer__content">
-							<p>
-								New Super Bag<br/>
-								Extra Slim Scarf<br/>
-								Wonderful Necklace<br/>
-								Golden Bracelett<br/>
-								Silver Earings<br/>
-								Cool Something Else<br/>
-								Lilly Backpack
-							</p>
+							<?php dynamic_sidebar( 'sidebar-2' ); ?>
 						</div>
 					</div>
 				</div>
@@ -68,12 +60,7 @@
 						<h5 class="footer__title">Newsletter</h5>
 						<hr>
 						<div class="footer__content">
-							<p>
-								Interested in instantly receiving the latest special offers and promotions?
-							</p>
-							<a href="#" class="btn btn-default">
-								<span>Subscribe</span>
-							</a>
+							<?php dynamic_sidebar( 'sidebar-3' ); ?>
 						</div>
 					</div>
 				</div>

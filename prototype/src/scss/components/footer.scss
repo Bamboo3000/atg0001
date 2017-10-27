@@ -49,6 +49,18 @@
 
 		}
 
+		.widget.woocommerce {
+			
+			h2,
+			ul li a img,
+			ul li > span,
+			ul li > del,
+			ul li > ins {
+				display: none;
+			}
+
+		}
+
 	}
 
 	&__lower {
