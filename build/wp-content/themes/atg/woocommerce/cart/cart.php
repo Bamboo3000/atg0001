@@ -78,6 +78,11 @@ do_action( 'woocommerce_before_cart' ); ?>
 									echo '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'woocommerce' ) . '</p>';
 								}
 							?>
+							<div class="price">
+								<?php
+									echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
+								?>
+							</div>
 							<?php
 								echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
 									'<a href="%s" class="remove btn btn-default small" aria-label="%s" data-product_id="%s" data-product_sku="%s">
@@ -89,11 +94,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 									esc_attr( $_product->get_sku() )
 								), $cart_item_key );
 							?>
-							<div class="price">
-								<?php
-									echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
-								?>
-							</div>
 						</div>
 						<div class="quantity-item">
 							<?php
