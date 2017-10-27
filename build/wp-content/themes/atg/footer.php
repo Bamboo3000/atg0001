@@ -1,7 +1,3 @@
-		<!-- <noscript id="deferred-styles">
-			<link href="https://fonts.googleapis.com/css?family=Oranienbaum" rel="stylesheet">
-			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		</noscript> -->
 	</div>
 	<footer class="footer">
 		<div class="container">
@@ -60,7 +56,12 @@
 						<h5 class="footer__title">Newsletter</h5>
 						<hr>
 						<div class="footer__content">
-							<?php dynamic_sidebar( 'sidebar-3' ); ?>
+							<p>
+								Interested in instantly receiving the latest special offers and promotions?
+							</p>
+							<a href="#" class="btn btn-default">
+								<span>Subscribe</span>
+							</a>
 						</div>
 					</div>
 				</div>
