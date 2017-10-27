@@ -381,6 +381,23 @@
         display: block;
     }
 
+    .wc-proceed-to-checkout {
+
+        .checkout-button,
+        .wc-forward {
+            display: none;
+        }
+
+        .woo_pp_cart_buttons_div {
+
+            .wcppec-checkout-buttons__separator {
+                display: none;
+            }
+
+        }
+
+    }
+
     table {
 
         @media(max-width: 500px) {
