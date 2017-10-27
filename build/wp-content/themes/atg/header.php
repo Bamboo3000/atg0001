@@ -7,6 +7,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Oranienbaum" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/css/prototype.css?v=1.27">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108874065-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-108874065-1');
+	</script>
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
