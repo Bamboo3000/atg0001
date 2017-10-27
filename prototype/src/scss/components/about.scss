@@ -31,6 +31,10 @@
                 float: none;
             }
 
+            @media(max-width: 420px) {
+                max-width: 100%;
+            }
+
         }
 
         p {
