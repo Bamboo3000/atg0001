@@ -17,15 +17,20 @@ section.home {
 		display: flex;
 		flex-wrap: nowrap;
 		border-radius: 6px;
+
+		@media(max-width: 480px) {
+			flex-wrap: wrap;
+		}
 		
 		.image,
 		.text {
 			flex-basis: 50%;
-		}
 
-		@media(max-width: 480px) {
-			flex-basis: 100%;
-			margin: 10px;
+			@media(max-width: 480px) {
+				flex-basis: 100%;
+				margin: 10px;
+			}
+
 		}
 
 		.image {
