@@ -10,7 +10,7 @@
         @include clearfix;
 
         @media(max-width: 580px) {
-            text-align: center;
+            text-align: center!important;
         }
 
         h1 {
@@ -28,12 +28,14 @@
             @media(max-width: 580px) {
                 margin: 5px auto;
                 display: block;
+                float: none;
             }
 
         }
 
         p {
             line-height: 1.44;
+            text-align: center!important;
 
             @media(max-width: 580px) {
                 display: block;
