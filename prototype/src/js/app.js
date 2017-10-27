@@ -73,13 +73,15 @@ function loadProductCarousel()
 			threshold: 20,
 			loop: true
 		});
-		document.getElementById('siema-prev').addEventListener('click', function() {
-			myProductSiema.prev()
-		});
-		document.getElementById('siema-next').addEventListener('click', function() {
-			myProductSiema.next()
-		});
-		siemaAutoplay(5000, myProductSiema, siema);
+		if(document.getElementById('siema-prev') && document.getElementById('siema-next')) {
+			document.getElementById('siema-prev').addEventListener('click', function() {
+				myProductSiema.prev()
+			});
+			document.getElementById('siema-next').addEventListener('click', function() {
+				myProductSiema.next()
+			});
+			siemaAutoplay(5000, myProductSiema, siema);
+		}
 	}
 }
 
