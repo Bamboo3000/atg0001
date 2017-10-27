@@ -10,12 +10,21 @@
             background-color: white;
             border-radius: 6px;
             box-shadow: 0 0 10px 0 rgba(black, 0.1);
+
+            @media(max-width: 580px) {
+                padding: 0;
+            }
+
         }
 
         &-row-title {
             display: flex;
             flex-wrap: nowrap;
             margin-bottom: 10px;
+
+            @media(max-width: 580px) {
+                margin-bottom: 0;
+            }
 
             .item-name {
                 flex-basis: auto;
@@ -26,6 +35,11 @@
                 font-weight: 400;
                 letter-spacing: 0.5px;
                 padding-bottom: 1px;
+
+                @media(max-width: 580px) {
+                    margin: 10px 5px;
+                }
+
             }
 
             .item-quantity {
@@ -36,6 +50,15 @@
                 font-weight: 400;
                 letter-spacing: 0.5px;
                 padding-bottom: 1px;
+
+                @media(max-width: 800px) {
+                    flex-basis: 70px;   
+                }
+
+                @media(max-width: 580px) {
+                    display: none;
+                }
+
             }
 
             .item-price {
@@ -47,6 +70,15 @@
                 letter-spacing: 0.5px;
                 padding-bottom: 1px;
                 text-align: right;
+
+                @media(max-width: 800px) {
+                    flex-basis: 60px;   
+                }
+
+                @media(max-width: 580px) {
+                    display: none;
+                }
+
             }
 
         }
@@ -60,9 +92,27 @@
                 background-color: rgba($color-light, 0.6);
             }
 
+            @media(max-width: 580px) {
+                flex-wrap: wrap;
+            }
+
+            @media(max-width: 420px) {
+                justify-content: space-between;
+            }
+
             .photo {
                 flex-basis: 124px;
                 padding: 10px;
+
+                @media(max-width: 800px) {
+                    flex-basis: 90px;
+                }
+
+                @media(max-width: 580px) {
+                    padding: 5px;
+                    flex-basis: 80px;
+                    order: 1;
+                }
 
                 a {
                     display: block;
@@ -85,6 +135,32 @@
                 flex-wrap: wrap;
                 align-items: flex-end;
 
+                @media(max-width: 800px) {
+                    flex-grow: 5;
+                }
+
+                @media(max-width: 580px) {
+                    padding: 5px;
+                    flex-basis: 120px;
+                    order: 5;
+                }
+
+                @media(max-width: 420px) {
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    align-content: flex-start;
+
+                    .price {
+                        display: block!important;
+                        padding: 5px 0!important;
+                    }
+
+                }
+
+                .price {
+                    display: none;
+                }
+
                 a {
                     font-weight: 500;
                     font-size: 19px;
@@ -92,6 +168,19 @@
                     width: 100%;
                     display: block;
                     align-self: flex-start;
+                    align-self: center; // to remove later
+
+                    @media(max-width: 800px) {
+                        font-size: 17px;
+                    }
+
+                    @media(max-width: 580px) {
+                        font-size: 14px;
+                    }
+
+                    @media(max-width: 420px) {
+                        align-self: flex-start;
+                    }
 
                     &.remove {
                         align-self: flex-end;
@@ -101,6 +190,7 @@
                         width: auto;
                         margin-top: 15px;
                         font-family: $font-secondary;
+                        display: none; // to remove later
                     }
 
                 }
@@ -113,6 +203,18 @@
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
+
+                @media(max-width: 800px) {
+                    flex-basis: 70px;   
+                    margin: 10px;
+                }
+
+                @media(max-width: 580px) {
+                    margin: 5px;
+                    flex-basis: 80px;
+                    order: 100;
+                    text-align: left;
+                }
 
                 .quantity {
                     display: inline-block;
@@ -177,13 +279,37 @@
                 text-align: right;
                 display: flex;
                 justify-content: flex-end;
-                align-items: flex-end;
                 align-items: center;
+
+                @media(max-width: 800px) {
+                    flex-basis: 80px;   
+                }
+
+                @media(max-width: 580px) {
+                    padding: 5px;
+                    flex-basis: 100px;
+                    order: 10;
+                    text-align: left;
+                    justify-content: flex-start;
+
+                    &.total {
+                        display: none;
+                    }
+
+                }
+
+                @media(max-width: 420px) {
+                    display: none;
+                }
 
                 span {
                     font-size: 16px;
                     font-weight: 500;
                     letter-spacing: 0.5px;
+
+                    @media(max-width: 800px) {
+                        font-size: 14px; 
+                    }
 
                     span {
                         margin-right: 3px;
@@ -231,6 +357,13 @@
         outline: none;
         margin: 20px 0;
         z-index: 99999;
+
+        @media(max-width: 500px) {
+            margin: 10px 0;
+            padding: 0 20px;
+            line-height: 32px;
+        }
+
     }
 
 }
@@ -240,6 +373,21 @@
     justify-content: flex-end;
     margin-bottom: 80px;
     margin-top: -67px;
+
+    @media(max-width: 500px) {
+        margin: 10px 0;
+        width: 100%;
+        display: block;
+    }
+
+    table {
+
+        @media(max-width: 500px) {
+            max-width: 100%;
+            min-width: 100%;
+        }
+
+    }
 
     h2 {
         font-size: 16px;
@@ -273,6 +421,10 @@
         z-index: 99999;
     }
 
+    .woocommerce-shipping-calculator {
+        display: none;
+    }
+
     .cart-subtotal,
     .order-total,
     .shipping,
@@ -283,6 +435,11 @@
         flex-wrap: nowrap;
         text-align: right;
         font-size: 14px;
+
+        @media(max-width: 500px) {
+            max-width: 100%;
+            min-width: 100%;
+        }
 
         th {
             text-align: left;
@@ -344,6 +501,11 @@ form.checkout {
     .col2-set {
         flex-basis: 50%;
         padding: 20px;
+
+        @media(max-width: 600px) {
+            flex-basis: 100%;
+        }
+
     }
 
     h3 {
@@ -354,6 +516,11 @@ form.checkout {
         flex-basis: 50%;
         align-self: flex-start;
         padding: 20px;
+
+        @media(max-width: 600px) {
+            flex-basis: 100%;
+        }
+
     }
 
     .woocommerce-additional-fields {
@@ -421,6 +588,11 @@ form.checkout {
         height: 36px;
         padding: 0 15px;
         font-family: $font-secondary;
+
+        @media(max-width: 600px) {
+            font-size: 16px;
+        }
+
     }
 
     textarea {
@@ -457,8 +629,14 @@ form.checkout {
 
         .product-name {
             min-width: 120px;
+            max-width: 240px;
             display: inline-block;
             text-align: left;
+
+            @media(max-width: 700px) {
+                max-width: 180px;
+            }
+
         }
 
         .product-total {
@@ -473,12 +651,17 @@ form.checkout {
             font-size: 14px;
         }
 
+        .shipping {
+            font-size: 14px;
+        }
+
         .order-total {
-            margin-top: 2px;
+            margin-top: 10px;
         }
 
         .cart-subtotal,
-        .order-total {
+        .order-total,
+        .shipping {
 
             th {
                 min-width: 120px;
