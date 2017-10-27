@@ -57,7 +57,7 @@
 				</div>
 			</div>
 			<div class="image">
-				<img src="<?= get_template_directory_uri(); ?>/assets/img/lookbook.jpg" alt="">
+				<img src="<?= get_template_directory_uri(); ?>/assets/img/lookbook_new.jpg" alt="">
 			</div>
 		</section>
 
