@@ -274,7 +274,9 @@
     }
 
     .cart-subtotal,
-    .order-total {
+    .order-total,
+    .shipping,
+    tr {
         max-width: 320px;
         min-width: 280px;
         display: flex;
