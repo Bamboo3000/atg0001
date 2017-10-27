@@ -89,6 +89,11 @@ do_action( 'woocommerce_before_cart' ); ?>
 									esc_attr( $_product->get_sku() )
 								), $cart_item_key );
 							?>
+							<div class="price">
+								<?php
+									echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
+								?>
+							</div>
 						</div>
 						<div class="quantity-item">
 							<?php
@@ -111,7 +116,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
 							?>
 						</div>
-						<div class="price">
+						<div class="price total">
 							<?php
 								echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
 							?>
