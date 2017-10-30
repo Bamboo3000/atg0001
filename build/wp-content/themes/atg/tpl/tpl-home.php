@@ -10,6 +10,9 @@
 			<?php if(get_field('hc_image_'.$i)) : ?>
 
 				<section class="home home__product">
+					<?php $term = get_field('hc_link_'.$i); if( $term ): ?>
+						<a href="<?php echo get_term_link( $term ); ?>" class="whole-element-link">
+					<?php endif; ?>
 					<?php if($i % 2 != 0) : ?>
 						<div class="image">
 							<?php $image = get_field('hc_image_'.$i); if( !empty($image) ): ?>
@@ -39,6 +42,9 @@
 								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 							<?php endif; ?>
 						</div>
+					<?php endif; ?>
+					<?php $term = get_field('hc_link_'.$i); if( $term ): ?>
+						</a>
 					<?php endif; ?>
 				</section>
 
