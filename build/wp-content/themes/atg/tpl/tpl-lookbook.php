@@ -29,9 +29,7 @@
                                 <?php foreach($links as $link) : ?>
                                     <?php $product = new WC_Product( $link->ID ); ?>
                                     <li>
-                                        <a href="<?php echo get_permalink($li
-                                        
-                                        nk->ID); ?>"><?php echo $product->name; ?> - <b>£<?php echo number_format($product->price, 2); ?></b></a>
+                                        <a href="<?php echo get_permalink($link->ID); ?>"><?php echo $product->name; ?> - <b>£<?php echo number_format($product->price, 2); ?></b></a>
                                     </li>
                                 <?php endforeach; ?>
                             </ul>
