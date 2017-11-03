@@ -6,7 +6,7 @@
 	<title>All That Glitters</title>
 	<link href="https://fonts.googleapis.com/css?family=Oranienbaum" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/css/prototype.css?v=1.29">
+	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/css/prototype.css?v=1.3">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108874065-1"></script>
 	<script>

@@ -43,7 +43,11 @@
 				display: block;
 				position: relative;
 				font-family: $font-primary;
-				line-height: 1.1;
+                line-height: 1.1;
+                
+                @media(max-width: 800px) {
+                    font-size: 36px;
+                }
 
 				a {
 					color: $color-tertiary;
