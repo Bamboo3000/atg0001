@@ -10,6 +10,10 @@
             padding: 10px;
             flex-basis: 66.66666%;
 
+            @media(max-width: 800px) {
+                flex-basis: 50%;
+            }
+
             img {
                 max-width: 200%;
                 width: 100%;
@@ -21,7 +25,11 @@
             flex-basis: 33.33333%;
             display: flex;
 			padding: 0 30px;
-			text-align: center;
+            text-align: center;
+            
+            @media(max-width: 800px) {
+                flex-basis: 50%;
+            }
 
 			&-container {
                 align-self: center;
