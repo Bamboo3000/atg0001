@@ -6,12 +6,21 @@
         display: flex;
         flex-wrap: nowrap;
 
+        @media(max-width: 480px) {
+            flex-wrap: wrap;
+        }
+
         .image {
             padding: 10px;
             flex-basis: 66.66666%;
 
             @media(max-width: 800px) {
                 flex-basis: 50%;
+            }
+
+            @media(max-width: 480px) {
+                flex-basis: 100%;
+                order: 1;
             }
 
             img {
@@ -29,6 +38,11 @@
             
             @media(max-width: 800px) {
                 flex-basis: 50%;
+            }
+
+            @media(max-width: 480px) {
+                flex-basis: 100%;
+                order: 100;
             }
 
 			&-container {
