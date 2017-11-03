@@ -76,6 +76,10 @@
                     li {
                         padding: 5px 0;
 
+                        @media(max-width: 800px) {
+                            font-size: 14px;
+                        }
+
                         a:hover {
                             text-decoration: underline;
                         }
