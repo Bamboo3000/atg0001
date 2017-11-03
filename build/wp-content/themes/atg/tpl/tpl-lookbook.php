@@ -9,7 +9,7 @@
     <?php if(get_field('lb_image'.$i)) : ?>        
 
         <div class="lookbook__item">
-            <?php if($i % 2 == 0) : ?>
+            <?php if($i % 2 != 0) : ?>
             <div class="image">
                 <?php $image = get_field('lb_image'.$i); ?>
                 <img src="<?php echo $image['url']; ?>" alt="">
@@ -28,14 +28,14 @@
                             <?php foreach($links as $link) : ?>
                                 <?php $product = new WC_Product( $link->ID ); ?>
                                 <li>
-                                    <a href="product-detail.html"><?php echo $product->name; ?> - <b>£<?php echo number_format($product->price, 2); ?></b></a>
+                                    <a href="<?php echo get_term_link( $link->ID ); ?>"><?php echo $product->name; ?> - <b>£<?php echo number_format($product->price, 2); ?></b></a>
                                 </li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
                 </div>
             </div>
-            <?php if($i % 2 != 0) : ?>
+            <?php if($i % 2 == 0) : ?>
             <div class="image">
                 <?php $image = get_field('lb_image'.$i); ?>
                 <img src="<?php echo $image['url']; ?>" alt="">
