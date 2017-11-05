@@ -50,6 +50,7 @@
 		<?php endfor; ?>
 
 		<section class="home home__lookbook">
+			<a href="/lookbook" class="whole-element-link"></a>
 			<div class="text">
 				<div class="text-container">
 					<p class="title">
