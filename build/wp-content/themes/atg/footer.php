@@ -77,7 +77,8 @@
 					</div>
 					<div class="footer__lower__grid right">
 						<p>
-							<a href="#" target="_blank">Made by <!--<i class="fa fa-heart" aria-hidden="true"></i> by: --><span>Sative</span></a>
+							<a href="https://cb1-photography.co.uk/" target="_blank">Photos by <!--<i class="fa fa-heart" aria-hidden="true"></i> by: --><span>CB1 Photography</span></a>
+							<a href="https://www.sative.co.uk" target="_blank">Made by <!--<i class="fa fa-heart" aria-hidden="true"></i> by: --><span>Sative</span></a>
 						</p>
 					</div>
 				</div>
