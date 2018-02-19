@@ -5,10 +5,10 @@ body {
 	display: block;
 	font-family: $font-secondary;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 18px;
 	color: $color-primary;
 	min-height: 100vh;
-	background-color: $color-light;
+	background-color: white;
 }
 
 html,
@@ -65,7 +65,7 @@ select,
 textarea,
 button,
 label {
-	font-family: 'Roboto', sans-serif;
+	font-family: $font-secondary;
 }
 
 section {
@@ -75,27 +75,27 @@ section {
 }
 
 #wrapper {
-	padding-top: 134px;
+	// padding-top: 134px;
 	position: relative;
 	display: block;
 	min-height: calc(100vh - 400px);
 
-	@media(max-width: 767px) {
-		padding-top: 124px;
-	}
+	// @media(max-width: 767px) {
+	// 	padding-top: 124px;
+	// }
 	
-	@media(max-width: 480px) {
-		padding-top: 60px;
-	}
+	// @media(max-width: 480px) {
+	// 	padding-top: 60px;
+	// }
 
 }
 
 .container {
 	position: relative;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 40px;
 	display: block;
-	max-width: 970px;
+	max-width: 1920px;
 
 	// // @media(min-width: 1441px) {
 	// // 	max-width: 1170px;
@@ -106,16 +106,11 @@ section {
 	// }
 
 	@media(max-width: 767px) {
-		padding: 0 10px;
+		padding: 0 30px;
 	}
 
 	&-sml {
-		max-width: 900px;
-
-		@media(max-width: 1170px) {
-			max-width: 768px;
-		}
-
+		max-width: 1440px;
 	}
 	
 	&__half-left {
