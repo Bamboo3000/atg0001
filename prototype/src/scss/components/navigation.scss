@@ -2,9 +2,9 @@
 	display: block;
 	position: fixed;
 	top: 0;
-	height: 134px;
+	height: 160px;
 	width: 100%;
-	background-color: $color-light;
+	background-color: white;
 	padding: 0;
 	z-index: 999999999999999999;
 	border-bottom: 1px solid $color-light;
@@ -19,20 +19,33 @@
 	}
 
 	.logo {
-		height: 90px;
-		width: auto;
-		display: inline-block;
-		line-height: 90px;
+		max-height: 100px;
+		display: block;
+		max-width: 200px;
+		text-align: center;
 
-		@media(max-width: 767px) {
-			height: 58px;
-			line-height: 58px;
+		span {
+			font-size: 19px;
+			line-height: 1;
+			font-weight: 900;
+			text-transform: uppercase;
+
+			&:last-child {
+				font-size: 36px;
+				font-weight: 800;
+			}
+
 		}
 
-		@media(max-width: 480px) {
-			height: 60px;
-			line-height: 60px;
-		}
+		// @media(max-width: 767px) {
+		// 	height: 58px;
+		// 	line-height: 58px;
+		// }
+
+		// @media(max-width: 480px) {
+		// 	height: 60px;
+		// 	line-height: 60px;
+		// }
 
 		object,
 		svg {
@@ -53,43 +66,43 @@
 	}
 
 	.top {
-		height: 44px;
-		line-height: 44px;
-		width: 100%;
-		display: block;
-		position: relative;
-		background-color: $color-darker;
-
-		@media(max-width: 480px) {
-			display: none;
-		}
-
-		&:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-
-	}
-
-	.bottom {
-		height: 90px;
+		height: 100px;
 		width: 100%;
 		display: block;
 		position: relative;
 		background-color: white;
 
-		> div {
-			height: 90px;
+		@media(max-width: 480px) {
+			display: none;
 		}
 
-		.right {
+		> .container {
+			height: 100px;
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			align-content: center;
+			align-items: center;
+		}
 
-			@media(max-width: 960px) {
-				position: absolute;
-				right: 0;
-			}
-		
+	}
+
+	.bottom {
+		height: 50px;
+		width: 100%;
+		display: block;
+		position: relative;
+		background-color: $color-light;
+
+		> div {
+			height: 50px;
+		}
+
+		> .container {
+			height: 50px;
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: center;
 		}
 
 		@media(max-width: 767px) {
@@ -123,9 +136,11 @@
 		display: inline-block;
 	}
 
+	.middle {
+		text-align: center;
+	}
+
 	.social {
-		height: 44px;
-		line-height: 44px;
 		display: block;
 		margin: 0;
 		padding: 0;
@@ -173,8 +188,6 @@
 	}
 
 	.tools {
-		height: 44px;
-		line-height: 44px;
 		display: block;
 		margin: 0;
 		padding: 0;
@@ -258,7 +271,7 @@
 			
 			a {
 				display: block;
-				color: white;
+				color: black;
 				text-align: center;
 				margin: 1px 0 0 16px;
 				transition: all 300ms ease;
@@ -367,19 +380,14 @@
 	}
 
 	.menu {
-		float: left;
 		display: inline-block;
 		list-style: none;
 		padding: 0;
-		height: 90px;
-		line-height: 90px;
-		margin: 0 -15px 0 0;
+		height: 60px;
+		line-height: 60px;
+		margin: 0 auto;
 		position: relative;
 		z-index: 9999;
-
-		@media(max-width: 1170px) {
-			margin: 0 0 0 -10px;
-		}
 
 		@media(max-width: 767px) {
 			margin: 0;
@@ -392,8 +400,8 @@
 
 		> li {
 			float: left;
-			line-height: 90px;
-			height: 90px;
+			line-height: 50px;
+			height: 50px;
 			position: relative;
 			z-index: 9;
 
@@ -410,7 +418,7 @@
 				display: inline-block;
 				position: relative;
 				height: 100%;
-				line-height: 90px;
+				line-height: 50px;
 				padding: 0 15px;
 				font-size: 13px;
 				text-transform: uppercase;
@@ -428,25 +436,6 @@
 					transition: none;
 				}
 
-				&:after {
-					display: block;
-					position: absolute;
-					bottom: 32px;
-					left: 50%;
-					width: 0;
-					height: 2px;
-					content: '';
-					background-color: rgba($color-tertiary, 0.65);
-					transition: all 250ms ease;
-
-					@media(max-width: 767px) {
-						display: none;
-						content: none;
-						transition: none;
-					}
-
-				}
-
 			}
 
 			&:hover,
@@ -458,17 +447,6 @@
 				a {
 					color: $color-tertiary;
 
-					&:after {
-						width: calc(100% - 30px);
-						left: 15px;
-
-						@media(max-width: 760px) {
-							width: calc(100% - 10px);
-							left: 10px;
-						}
-
-					}
-
 					@media(max-width: 767px) {
 						background-color: white;
 					}
@@ -479,7 +457,7 @@
 
 			.sub-menu {
 				position: absolute;
-				top: 90px;
+				top: 50px;
 				margin-left: -7px;
 				background-color: white;
 				width: auto;

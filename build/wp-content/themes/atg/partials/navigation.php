@@ -15,9 +15,17 @@
 					</li>
 				</ul>
 			</div>
+			<div class="middle">
+				<a href="/" class="logo">
+					<?php /* <object data="<?= get_template_directory_uri(); ?>/assets/img/logo.svg" type="image/svg+xml"></object> */ ?>
+					<span>All</span>
+					<span>That</span>
+					<span>Glitters</span>
+				</a>
+			</div>
 			<div class="right">
 				<ul class="tools">
-					<li>
+					<?php /*<li>
 						<form role="search" method="get" class="search-form woocommerce-product-search" action="<?php get_site_url(); ?>">
 							<label>
 								<span class="screen-reader-text">Search for:</span>
@@ -27,7 +35,7 @@
 							<input type="hidden" name="post_type" value="product">
 						</form>
 						<i class="material-icons">search</i>
-					</li>
+					</li> */ ?>
 					<li>
 						<a href="<?= get_home_url(); ?>/my-account">
 							<i class="material-icons">person</i>
@@ -46,17 +54,12 @@
 	</div>
 	<div class="bottom">
 		<div class="container">
-			<div class="left">
-				<a href="/" class="logo">
-					<object data="<?= get_template_directory_uri(); ?>/assets/img/logo.svg" type="image/svg+xml"></object>
-				</a>
-			</div>
 			<div id="menu-btn">
 				<span></span>
 				<span></span>
 				<p>MENU</p>
 			</div>
-			<div class="right">
+			<div class="middle">
 				<?php if ( has_nav_menu( 'menu' ) ) :
 					wp_nav_menu( array(
 						'theme_location' => 'menu',
