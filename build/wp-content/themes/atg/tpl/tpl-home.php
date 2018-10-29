@@ -1,9 +1,13 @@
 <?php /* Template Name: Home page */ ?>
 <?php get_header(); ?>
 
-<div class="container">
-
 	<?php while ( have_posts() ) : the_post(); ?>
+
+		<section class="home home__slider">
+			<div class="container">
+				
+			</div>
+		</section>
 
 		<?php for($i = 1; $i <= 6; $i++) : ?>
 
@@ -66,48 +70,48 @@
 		</section>
 
 		<section class="home home__comments">
-			<p class="title">
-				A few comments
-			</p>
-			<div id="comments-carousel">
-				<div>
-					<p class="comment">
-						‘Thank you so much! Lovely presentation and a great quality, special handbag! Lovely to have it hand delivered as well. All the best!’
-					</p>
-					<span>-</span>
-					<p class="author">
-						Agnieszka
-					</p>
+			<div class="container">
+				<p class="title">
+					A few comments
+				</p>
+				<div id="comments-carousel">
+					<div>
+						<p class="comment">
+							‘Thank you so much! Lovely presentation and a great quality, special handbag! Lovely to have it hand delivered as well. All the best!’
+						</p>
+						<span>-</span>
+						<p class="author">
+							Agnieszka
+						</p>
+					</div>
+					<div>
+						<p class="comment">
+							‘Thank you so much, I love my bag and scarf so much! The box it came in was gorgeous, just like Xmas come early, will be back soon!! Xxx’
+						</p>
+						<span>-</span>
+						<p class="author">
+							Julie
+						</p>
+					</div>
+					<div>
+						<p class="comment">
+							‘Love, love, LOVE my new scarf! It’s perfect to accessorise any outfit, and to wear in the evenings when it gets a little cold! Awesome quality too!’
+						</p>
+						<span>-</span>
+						<p class="author">
+							Steph
+						</p>
+					</div>
 				</div>
-				<div>
-					<p class="comment">
-						‘Thank you so much, I love my bag and scarf so much! The box it came in was gorgeous, just like Xmas come early, will be back soon!! Xxx’
-					</p>
-					<span>-</span>
-					<p class="author">
-						Julie
-					</p>
+				<div id="siema-prev">
+					<i class="fas fa-chevron-left"></i>
 				</div>
-				<div>
-					<p class"=comment">
-						‘Love, love, LOVE my new scarf! It’s perfect to accessorise any outfit, and to wear in the evenings when it gets a little cold! Awesome quality too!’
-					</p>
-					<span>-</span>
-					<p class="author">
-						Steph
-					</p>
+				<div id="siema-next">
+					<i class="fas fa-chevron-right"></i>
 				</div>
-			</div>
-			<div id="siema-prev">
-				<i class="material-icons">chevron_left</i>
-			</div>
-			<div id="siema-next">
-				<i class="material-icons">chevron_right</i>
 			</div>
 		</section>
 
 	<?php endwhile; // end of the loop. ?>
-
-</div>
 
 <?php get_footer(); ?>

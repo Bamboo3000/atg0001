@@ -5,19 +5,18 @@
 				<ul class="social">
 					<li>
 						<a href="https://www.facebook.com/allthatglittersest2017/" target="_blank">
-							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<i class="fab fa-facebook-f"></i>
 						</a>
 					</li>
 					<li>
 						<a href="https://www.instagram.com/all_that_glitters_est_2017/" target="_blank">
-							<i class="fa fa-instagram" aria-hidden="true"></i>
+							<i class="fab fa-instagram"></i>
 						</a>
 					</li>
 				</ul>
 			</div>
 			<div class="middle">
 				<a href="/" class="logo">
-					<?php /* <object data="<?= get_template_directory_uri(); ?>/assets/img/logo.svg" type="image/svg+xml"></object> */ ?>
 					<span>All</span>
 					<span>That</span>
 					<span>Glitters</span>
@@ -38,14 +37,14 @@
 					</li> */ ?>
 					<li>
 						<a href="<?= get_home_url(); ?>/my-account">
-							<i class="material-icons">person</i>
+							<i class="fas fa-user-circle"></i>
 							<span>login</span>
 						</a>
 					</li>
 					<li>
 						<a href="<?= get_home_url(); ?>/cart">
-							<i class="material-icons">shopping_basket</i>
-							<span>cart</span>
+							<i class="fas fa-shopping-bag"></i>
+							<span>bag</span>
 						</a>
 					</li>
 				</ul>

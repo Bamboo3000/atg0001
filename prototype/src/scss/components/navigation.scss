@@ -1,22 +1,22 @@
 .main-navigation {
 	display: block;
-	position: fixed;
-	top: 0;
-	height: 160px;
+	position: relative;
+	//top: 0;
+	//height: 158px;
 	width: 100%;
 	background-color: white;
 	padding: 0;
 	z-index: 999999999999999999;
 	border-bottom: 1px solid $color-light;
-	box-shadow: 0 3px 10px 0px rgba(black, 0.1);
+	box-shadow: 0 2px 5px 0px rgba(black, 0.15);
 
-	@media(max-width: 767px) {
-		height: 124px;
-	}
+	// @media(max-width: 767px) {
+	// 	height: 124px;
+	// }
 
-	@media(max-width: 480px) {
-		height: 60px;
-	}
+	// @media(max-width: 480px) {
+	// 	height: 60px;
+	// }
 
 	.logo {
 		max-height: 100px;
@@ -25,14 +25,26 @@
 		text-align: center;
 
 		span {
-			font-size: 19px;
+			font-size: 16px;
 			line-height: 1;
-			font-weight: 900;
+			font-weight: 800;
 			text-transform: uppercase;
+			transition: all 250ms ease;
 
 			&:last-child {
-				font-size: 36px;
-				font-weight: 800;
+				font-size: 30px;
+				font-weight: 900;
+			}
+
+		}
+
+		&:hover {
+			text-decoration: none;
+			
+
+			span {
+				color: $color-tertiary;
+				//text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
 			}
 
 		}
@@ -47,26 +59,25 @@
 		// 	line-height: 60px;
 		// }
 
-		object,
-		svg {
-			height: 64px;
-			width: auto;
-			pointer-events: none;
+		// object,
+		// svg {
+		// 	height: 64px;
+		// 	width: auto;
+		// 	pointer-events: none;
 
-			@media(max-width: 767px) {
-				height: 58px;
-			}
+		// 	@media(max-width: 767px) {
+		// 		height: 58px;
+		// 	}
 
-			@media(max-width: 480px) {
-				height: 44px;
-			}
+		// 	@media(max-width: 480px) {
+		// 		height: 44px;
+		// 	}
 
-		}
+		// }
 
 	}
 
 	.top {
-		height: 100px;
 		width: 100%;
 		display: block;
 		position: relative;
@@ -88,18 +99,18 @@
 	}
 
 	.bottom {
-		height: 50px;
+		height: 48px;
 		width: 100%;
 		display: block;
 		position: relative;
 		background-color: $color-light;
 
 		> div {
-			height: 50px;
+			height: 48px;
 		}
 
 		> .container {
-			height: 50px;
+			height: 48px;
 			display: flex;
 			flex-wrap: nowrap;
 			justify-content: center;
@@ -127,12 +138,10 @@
 	}
 
 	.left {
-		float: left;
 		display: inline-block;
 	}
 
 	.right {
-		float: right;
 		display: inline-block;
 	}
 
@@ -145,12 +154,6 @@
 		margin: 0;
 		padding: 0;
 
-		&:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-
 		li {
 			float: left;
 			position: relative;
@@ -159,17 +162,19 @@
 				display: block;
 				color: $color-dark;
 				background-color: white;
-				width: 30px;
-				height: 30px;
-				line-height: 30px;
+				width: 34px;
+				height: 34px;
+				line-height: 37px;
 				text-align: center;
-				border-radius: 30px;
-				margin: 7px 10px 7px 0;
-				font-size: 18px;
-				transition: all 300ms ease;
+				border-radius: 34px;
+				margin: 0 3px 0 0;
+				font-size: 22px;
+				transition: all 250ms ease;
 
 				i {
-					transition: all 300ms ease;
+					font-size: 21px;
+					transition: all 250ms ease;
+					color: $color-dark;
 				}
 
 				&:hover {
@@ -271,10 +276,10 @@
 			
 			a {
 				display: block;
-				color: black;
+				color: $color-dark;
 				text-align: center;
-				margin: 1px 0 0 16px;
-				transition: all 300ms ease;
+				margin: 0 0 0 25px;
+				transition: all 250ms ease;
 
 				span {
 					line-height: 1;
@@ -282,18 +287,19 @@
 					width: auto;
 					display: block;
 					font-size: 12px;
-					margin-top: -2px;
+					margin-top: 4px;
 					font-weight: 500;
-					transition: all 300ms ease;
+					transition: all 250ms ease;
 				}
 
 				i {
-					font-size: 29px;
-					display: block;
-					transition: all 300ms ease;
+					font-size: 24px;
+					transition: all 250ms ease;
+					vertical-align: middle;
 				}
 
 				&:hover {
+					text-decoration: none;
 
 					i {
 						color: $color-tertiary;
@@ -383,8 +389,8 @@
 		display: inline-block;
 		list-style: none;
 		padding: 0;
-		height: 60px;
-		line-height: 60px;
+		height: 48px;
+		line-height: 48px;
 		margin: 0 auto;
 		position: relative;
 		z-index: 9999;
@@ -400,14 +406,14 @@
 
 		> li {
 			float: left;
-			line-height: 50px;
-			height: 50px;
+			line-height: 48px;
+			height: 48px;
 			position: relative;
 			z-index: 9;
 
 			@media(max-width: 767px) {
 				height: auto;
-				line-height: 44px;
+				line-height: 48px;
 				float: none;
 				border-bottom: 1px solid #ececec;
 			}
@@ -418,12 +424,12 @@
 				display: inline-block;
 				position: relative;
 				height: 100%;
-				line-height: 50px;
-				padding: 0 15px;
+				line-height: 48px;
+				padding: 0 24px;
 				font-size: 13px;
 				text-transform: uppercase;
-				font-weight: 500;
-				letter-spacing: 2px;
+				font-weight: 700;
+				letter-spacing: 1px;
 				z-index: 9;
 				transition: all 250ms ease;
 
@@ -432,20 +438,35 @@
 					line-height: 44px;
 					display: block;
 					color: $color-primary;
-					padding: 0 15px;
+					padding: 0 16px;
 					transition: none;
 				}
 
 			}
 
 			&:hover,
-			&.current-menu-item,
-			&.current_page_item,
-			&.current_page_parent,
 			&.open {
 
 				a {
+					color: white;
+					background-color: $color-tertiary;
+
+					@media(max-width: 767px) {
+						color: $color-tertiary;
+						background-color: white;
+					}
+				
+				}
+
+			}
+
+			&.current-menu-item,
+			&.current_page_item,
+			&.current_page_parent {
+
+				a {
 					color: $color-tertiary;
+					background-color: transparent;
 
 					@media(max-width: 767px) {
 						background-color: white;
@@ -458,7 +479,8 @@
 			.sub-menu {
 				position: absolute;
 				top: 50px;
-				margin-left: -7px;
+				left: 50%;
+				transform: translateX(-50%);
 				background-color: white;
 				width: auto;
 				list-style: none;
