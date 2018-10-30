@@ -117,8 +117,7 @@ function subMenu()
 {
 	$('*[href="#submenu"]').on('click', function(e) {
 		e.preventDefault();
-		$(this).parent().toggleClass('open');
-		$(this).next('.sub-menu').slideToggle(250);
+		$(this).next('.sub-menu').slideToggle(250).parent().toggleClass('open');
 	});
 }
 

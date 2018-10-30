@@ -47,6 +47,12 @@ a {
 	color: inherit;
 	outline: none;
 	border: none;
+
+	&:hover {
+		text-decoration: none;
+		color: inherit;
+	}
+
 }
 
 ul {

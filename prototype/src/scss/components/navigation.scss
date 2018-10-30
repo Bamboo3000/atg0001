@@ -408,7 +408,6 @@
 			float: left;
 			line-height: 48px;
 			height: 48px;
-			position: relative;
 			z-index: 9;
 
 			@media(max-width: 767px) {
@@ -462,7 +461,8 @@
 
 			&.current-menu-item,
 			&.current_page_item,
-			&.current_page_parent {
+			&.current_page_parent,
+			&.current-menu-parent {
 
 				a {
 					color: $color-tertiary;
@@ -474,6 +474,10 @@
 				
 				}
 
+				.sub-menu {
+					display: block;
+				}
+
 			}
 
 			.sub-menu {
@@ -482,9 +486,9 @@
 				left: 50%;
 				transform: translateX(-50%);
 				background-color: white;
-				width: auto;
+				width: 100vw;
 				list-style: none;
-				padding: 5px 12px;
+				padding: 0;
 				display: none;
 				z-index: 9999;
 				box-shadow: 0 5px 5px 0px rgba(black, 0.1);
@@ -496,36 +500,55 @@
 				}
 
 				li {
-					float: none;
+					display: inline-block;
 					position: relative;
 					z-index: 9;
 					background-color: white;
 
-					&:first-of-type {
-						padding-top: 5px;
-					}
+					// &:first-of-type {
+					// 	padding-top: 5px;
+					// }
 
-					&:last-of-type {
-						padding-bottom: 5px;
-					}
+					// &:last-of-type {
+					// 	padding-bottom: 5px;
+					// }
 
 					a {
 						display: block;
-						height: 32px;
-						line-height: 32px;
 						font-size: 12px;
 						font-weight: 500;
 						color: $color-primary;
 						text-decoration: none;
 						text-transform: uppercase;
-						padding: 0 10px;
+						padding: 10px 20px;
 						letter-spacing: 1px;
 						position: relative;
 						transition: all 250ms ease;
 						white-space: nowrap;
+						background-color: white;
+						text-align: center;
+
+						span,
+						svg {
+							display: block;
+						}
+
+						svg {
+							max-width: 42px;
+							max-height: 42px;
+							margin: 8px auto 16px auto;
+							text-align: center;
+							transition: all 250ms ease;
+						}
 
 						&:hover {
 							color: $color-tertiary;
+
+							svg {
+								color: $color-tertiary;
+								fill: $color-tertiary;
+							}
+
 						}
 
 					}
@@ -534,6 +557,12 @@
 						
 						a {
 							color: $color-tertiary;
+
+							svg {
+								color: $color-tertiary;
+								fill: $color-tertiary;
+							}
+
 						}
 
 					}
